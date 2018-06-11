@@ -205,7 +205,7 @@ div .headings {
 
 /* Button blinking */
 
-.blinking b{
+/* .blinking b{
     color: #FFFAFA;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #a01b1b, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 5px 3px #000;
   }
@@ -241,7 +241,7 @@ div .headings {
       text-shadow: none;
     }
 
-  }
+  } */
 
 .gameHoldItem {
     margin: 0px 15px 5px 15px;
@@ -546,7 +546,7 @@ a:visited {
 /* Medium screens */
 @media all and (max-width: 800px) {
 
-    /* .categoryList,
+    .categoryList,
     .gameBodySlots,
     .gameHoldBtn {
         display: block;
@@ -554,10 +554,28 @@ a:visited {
 
     .gameBody {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 80px 160px 80px;
         grid-gap: 5px;
-        grid-auto-rows: auto auto auto auto auto;
+        grid-auto-rows: 120px 120px 120px 120px 120px;
+        margin: 0 auto 650px auto;
     }
+
+    .categoryList,
+    .gameHoldBtn {
+        display: grid;
+        grid-template-columns: 80px;
+        grid-gap: 5px;
+        grid-auto-rows: 120px 120px 120px 120px 120px;
+    }
+
+    .gameBodySlots {
+        display: grid;
+        grid-template-columns: 160px;
+        grid-gap: 5px;
+        grid-auto-rows: 120px 120px 120px 120px 120px;
+    }
+
+    /* headers */
 
     .ciTarget {
         grid-column: 1;
@@ -584,6 +602,8 @@ a:visited {
         grid-row: 5;
     }
 
+    /* gameslots */
+
     .gsTarget {
         grid-column: 1;
         grid-row: 1;
@@ -607,7 +627,89 @@ a:visited {
     .gsLearning {
         grid-column: 1;
         grid-row: 5;
-    } */
+    }
+
+    /* hold buttons */
+
+    .ghTarget {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ghNeed { 
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .ghGenre {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .ghDesign {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .ghLearning {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    /* game area */
+
+    .categoryList {
+        margin: 0;
+    }
+
+    .categoryItem {
+        color: rgb(253, 253, 253);
+        text-align: center;
+        font-style: italic;
+        font-size: 1em;
+        text-transform: uppercase; 
+        background: #B5121B;
+        border-radius: 15px 15px 0 0;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        display: block;
+        width: 100px;
+        margin: auto 0 auto 20px;
+        padding: 10px 10px 10px 7px;
+    }
+
+    .gameSlotItem {
+        margin-top: 10px;
+    }
+
+    .gameHoldBtn {
+        margin-bottom: 0;
+        top: 40px;
+    }
+
+    .gameHoldItem{
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+
+    .gameStartBtn {
+        margin: 0 auto;
+    }
+    
+    .gameStart {
+        padding: 20px;
+        font-size: 1.6em;
+        margin: 0 auto;
+    }
+
+
+
+    /* idea */
 
     .idea {
         display: block;
