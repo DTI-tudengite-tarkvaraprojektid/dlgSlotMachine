@@ -311,20 +311,19 @@ a:visited {
     padding: 1em 1em 1em 0em;
 }
 
-.descriptionInfo {
-    display: block;
+.descriptionCenter {
+    width: 760px;
     margin: 0 auto;
-    max-width: 34%;
 }
 
-#contacts {
-    background-color:#F5F2F2;
+#credits {
+    background-color:rgb(253, 253, 253);
     text-align: center;
     display: block;
     padding: 1em 1em 1em 0em;
 }
 
-#credits{
+#contact {
     background-color:#333333;
     text-align: center;
     display: block;
@@ -333,61 +332,61 @@ a:visited {
 
 }
 
-
-
-div .headings {
-    padding: 0px 20px 0 0;
-    font-size: 2em;
-    font-weight: 400;
-    color:#333333;
-    padding: .7em 1.7em;
-    margin: 0;
-    line-height: 1;
-    top: 0;
-    left: 0;
-    width: 10%;
-  }
-
-  div .dBHeadings {
-    padding: 0px 20px 0 0;
-    font-size: 2em;
-    font-weight: 400;
-    color:#F5F2F2;
-    padding: .7em 1.7em;
-    margin: 0;
-    line-height: 1;
-    top: 0;
-    left: 0;
-    width: 10%;
-  }
-  
-  div .dBHeadings {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-
-
-div .headings {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
 div .descriptionHeading {
-    font-size: 2em;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.6em;
+    font-weight: 800;
     color: #333333;
-    top: 4;
-    left: 0;
-    width: 10%;
-    position: absolute;
+    margin-top: 160px;
+    margin-left: -600px;
+}
+
+
+div .creditsHeading {
+    font-size: 2.6em;
+    font-weight: 800;
+    color: #333333;
+    margin-top: 120px;
+    margin-left: -600px;
+}
+
+div .contactHeading {
+    font-size: 2.6em;
+    font-weight: 800;
+    color: rgb(253, 253, 253);
+    margin-top: 140px;
+    margin-left: -600px;
+}
+
+div .descriptionHeading,
+div .contactHeading,
+div .creditsHeading {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.descriptionInfo {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #333333;
+    text-align: left;
+    margin-top: -130px;
+    margin-bottom: 80px;
+    margin-right: 30px;
+}
+
+.contactInfo {
+    display: block;
+    margin: 0 auto;
+    color: rgb(253, 253, 253);
+    max-width: 70%;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 /* The Modal (background) */
@@ -803,8 +802,4 @@ div .descriptionHeading {
     .logoTLU {
         max-width: 45%;
     }
-
-    .gameBody {
-    }
-
 }
