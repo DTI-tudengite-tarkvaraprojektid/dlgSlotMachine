@@ -308,9 +308,6 @@ a:visited {
     background-color: #F6E2DA;
     text-align: center;
     display: block;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
     padding: 1em 1em 1em 0em;
 }
 
@@ -331,7 +328,6 @@ a:visited {
     background-color:#333333;
     text-align: center;
     display: block;
-    position: relative;
     padding: 1em 1em 1em 0em;
     transition: all .3s;
 
