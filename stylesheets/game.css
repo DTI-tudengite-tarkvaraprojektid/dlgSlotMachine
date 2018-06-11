@@ -94,8 +94,6 @@ h1 {
     display: block;
     position: relative;
     padding: 1em 1em 1em 0em;
-    overflow: hidden;
-    box-shadow: .7em .7em 0 rgba(0, 0, 0, 0.1);
     transition: all .3s;
 
 }
@@ -107,47 +105,42 @@ h1 {
     display: block;
     position: relative;
     padding: 1em 1em 1em 0em;
-    overflow: hidden;
-    box-shadow: .7em .7em 0 rgba(0, 0, 0, 0.1);
     transition: all .3s;
 }
 
 #contacts {
 
-    background-color:rgba(252, 190, 190, 0.85);
-    text-align: center;
-    display: block;
-    position: relative;
-    padding: 1em 1em 1em 0em;
-    overflow: hidden;
-    box-shadow: .7em .7em 0 rgba(0, 0, 0, 0.1);
-    transition: all .3s;
-}
-
-#info {
     background-color:rgb(139,136,120);
     text-align: center;
     display: block;
     position: relative;
     padding: 1em 1em 1em 0em;
-    overflow: hidden;
-    box-shadow: .7em .7em 0 rgba(0, 0, 0, 0.1);
     transition: all .3s;
 }
+
+#credits{
+    background-color:rgb(155, 46, 42,0.85);
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 1em 1em 1em 0em;
+    transition: all .3s;
+}
+
 
 div .p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 div .headings {
+    padding-top: 0px;
     font-size: 2em;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#333333;
-    padding: .7em 1.6em;
+    padding: .7em 1.7em;
     margin: 0;
     line-height: 1;
-    position: absolute;
     top: 0;
     left: 0;
     width: 10%;
