@@ -316,15 +316,14 @@ a:visited {
     margin: 0 auto;
     max-width: 34%;
 }
-
-#contacts {
+#credits {
     background-color:#F5F2F2;
     text-align: center;
     display: block;
     padding: 1em 1em 1em 0em;
 }
 
-#credits{
+#contacts{
     background-color:#333333;
     text-align: center;
     display: block;
@@ -333,7 +332,11 @@ a:visited {
     color:white;
 }
 
-
+.socialmediaIcons{
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+}
 
 div .headings {
     padding: 0px 20px 0 0;
