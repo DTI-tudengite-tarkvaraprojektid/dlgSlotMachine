@@ -267,7 +267,7 @@ h3 {
 .logoTLU {
     position: relative;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     max-width: 16%;
 }
 
@@ -406,6 +406,7 @@ div .descriptionHeading {
     background-color: rgb(0,0,0,0.4); /* Black w/ opacity */
     transform: translate(-50%, -50%);
 }
+
 
 /* Modal Content */
 .modal-content {
@@ -548,6 +549,10 @@ div .descriptionHeading {
         margin-bottom: 60px;
     }
 
+    .logoTLU{
+        margin-bottom: 40px;
+    }
+
 }
 
 
@@ -585,6 +590,7 @@ div .descriptionHeading {
         grid-gap: 5px;
         grid-auto-rows: 120px 120px 120px 120px 120px;
         margin: 0 auto 650px auto;
+        width: 38%;
     }
 
     .categoryList,
@@ -722,6 +728,7 @@ div .descriptionHeading {
         height: 40px;
         padding: 0;
         margin: 40px 0 0 0;
+        border-radius: 50%;
     }
 
     .gameStartBtn {
@@ -733,8 +740,6 @@ div .descriptionHeading {
         font-size: 1.6em;
         margin: 0 auto;
     }
-
-
 
     /* idea */
 
@@ -797,6 +802,9 @@ div .descriptionHeading {
 
     .logoTLU {
         max-width: 45%;
+    }
+
+    .gameBody {
     }
 
 }
