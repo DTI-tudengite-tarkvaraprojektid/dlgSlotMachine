@@ -64,11 +64,29 @@
         </div>
 
         <div class="gameHoldBtn">
+<<<<<<< HEAD
             <button type="button" id="holdButton1" class="gameHoldItem ghTarget" onclick="holdButtonToggler(0)" disabled>Hold 1</button>
             <button type="button" id="holdButton2" class="gameHoldItem ghNeed" onclick="holdButtonToggler(1)" disabled>Hold 2</button>
             <button type="button" id="holdButton3" class="gameHoldItem ghGenre" onclick="holdButtonToggler(2)" disabled>Hold 3</button>
             <button type="button" id="holdButton4" class="gameHoldItem ghDesign" onclick="holdButtonToggler(3)" disabled>Hold 4</button>
             <button type="button" id="holdButton5" class="gameHoldItem ghLearning" onclick="holdButtonToggler(4)" disabled>Hold 5</button>
+=======
+            <button type="button" id="holdButton1" class="gameHoldItem" onclick="holdButtonToggler(0)" disabled>
+				<img src="img/lock_open.svg" id="lock1" class="lock-icon">
+			</button>
+            <button type="button" id="holdButton2" class="gameHoldItem" onclick="holdButtonToggler(1)" disabled>
+				<img src="img/lock_open.svg" id="lock2" class="lock-icon">
+			</button>
+            <button type="button" id="holdButton3" class="gameHoldItem" onclick="holdButtonToggler(2)" disabled>
+				<img src="img/lock_open.svg" id="lock3" class="lock-icon">
+			</button>
+            <button type="button" id="holdButton4" class="gameHoldItem" onclick="holdButtonToggler(3)" disabled>
+				<img src="img/lock_open.svg" id="lock4" class="lock-icon">
+			</button>
+            <button type="button" id="holdButton5" class="gameHoldItem" onclick="holdButtonToggler(4)" disabled>
+				<img src="img/lock_open.svg" id="lock5" class="lock-icon">
+			</button>
+>>>>>>> e7e1398820f92fd0161561fed9e61a5866539f71
         </div>
     </div>
 
@@ -82,10 +100,10 @@
 
     <div class="menu">
         <ul class="menuList">
-            <li class="menuItem"><a href="">About DLG</a></li>
+            <li class="menuItem"><a href="#description">About DLG</a></li>
             <li class="menuItem"><a href="https://estonia.dreamapply.com/courses/course/375-msc-digital-learning-games" target="_blank">Apply</a></li>
-            <li class="menuItem"><a href="">Contacts</a></li>
-            <li class="menuItem"><a href="">Credits</a></li>
+            <li class="menuItem"><a href="#contacts">Contacts</a></li>
+            <li class="menuItem"><a href="#credits">Credits</a></li>
             <li class="menuItem menuR"><a href="" ></a></li>
         </ul>
     </div>
@@ -115,25 +133,23 @@
 
 
 <div id="description">
-<p>Digital Learning Games (DLG) is a 2 years international postgraduate program in the Tallinn University. <br>
+<div class="DLGHeading">About DLG</div>
+<p><b>Digital Learning Games</b> (DLG) is a 2 years international postgraduate program in the Tallinn University. <br>
 Our objective is to bring together people with different backgrounds: programmers, artists, teachers, psychologists and <br>
 everyone who is interested in digital innovation and creating games in cooperation.<br>
  Study language is English and the tuition fee is 1 250 € per semester.</p>
 </div>
 
 
-
-
 <div id="program">
   <div class="headings">Program</div>
   <a href="http://dlg.tlu.ee/userfiles/file/DLG.pdf" target="_blank">
-<img border="0" alt="program" src="img/program.png">
-</a>
+<img border="0" alt="program" src="img/program.png"></a>
 </div>
 
-
-<div id="info">
-        <p>Tallinn University
+<div id="contacts">
+<div class="headings">Contacts</div>
+<p>Tallinn University
             <br>
         School of Digital Technologies
         <br>
@@ -147,6 +163,18 @@ everyone who is interested in digital innovation and creating games in cooperati
         <br>
         FB: https://www.facebook.com/digitallearninggames/
     </p>
+</div>
+
+<div id="credits">
+<div class="headings">Credits</div>
+<p>Credits go to: </p>
+</div>
+
+
+
+
+<br>
+
 </div>
 
 
