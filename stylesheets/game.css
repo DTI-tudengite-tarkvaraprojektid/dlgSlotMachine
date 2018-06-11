@@ -189,6 +189,7 @@ h1 {
     border: 1px solid black;
     border-radius: 15px; 
     padding: 10px;
+	background-color: #D3D3D3;
 }
 
 
@@ -315,23 +316,33 @@ a:visited {
     width: 760px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 
 #credits {
     background-color:rgb(253, 253, 253);
+=======
+#credits {
+    background-color:#F5F2F2;
+>>>>>>> c5326a5f3b257e047ab4ef4ae63ce84256c8f923
     text-align: center;
     display: block;
     padding: 1em 1em 1em 0em;
 }
 
+<<<<<<< HEAD
 #contact {
+=======
+#contacts{
+>>>>>>> c5326a5f3b257e047ab4ef4ae63ce84256c8f923
     background-color:#333333;
     text-align: center;
     display: block;
     padding: 1em 1em 1em 0em;
     transition: all .3s;
-
+    color:white;
 }
 
+<<<<<<< HEAD
 div .descriptionHeading {
     font-size: 2.6em;
     font-weight: 800;
@@ -340,6 +351,13 @@ div .descriptionHeading {
     margin-left: -600px;
 }
 
+=======
+.socialmediaIcons{
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+>>>>>>> c5326a5f3b257e047ab4ef4ae63ce84256c8f923
 
 div .creditsHeading {
     font-size: 2.6em;
