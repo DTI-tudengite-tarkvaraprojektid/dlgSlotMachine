@@ -98,15 +98,6 @@ h1 {
 
 }
 
-#program {
-
-    background-color:rgb(253,245,230,0.2);
-    text-align: center;
-    display: block;
-    position: relative;
-    padding: 1em 1em 1em 0em;
-    transition: all .3s;
-}
 
 #contacts {
 
