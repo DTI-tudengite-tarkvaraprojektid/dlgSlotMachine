@@ -12,8 +12,6 @@ canvas{
     position: relative;
 }
 
-
-
 /* Servad */
 
 #top, #bottom, #left, #right {
@@ -46,6 +44,7 @@ canvas{
     margin: 0 auto;
     max-width: 15%;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .logoHeading {
