@@ -108,7 +108,7 @@ h1 {
     position: relative;
     border-radius: 50%;
     background-color: #B5121B;
-    border: 1px solid black;
+    border: none;
     color: white;
     padding: 30px;
     text-align: center;
@@ -118,12 +118,13 @@ h1 {
     text-transform: uppercase; 
 }
 
-.gameHoldBtn::after {
+.gameStartBtn::after {
     content: "";
     display: block;
     border-radius: 50%;
     border: 1px solid black;
-    padding: 50px;
+    padding: 80px;
+    margin: -147px 0 0 9px;
 }
 
 .gameHoldBtn {
