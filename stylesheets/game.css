@@ -808,6 +808,12 @@ div .creditsHeading {
         text-align: left;
         margin: 0 auto;
     }
+
+    .modal {
+        width: 180vw;
+        height: 120vh;
+    }
+
 }
 
 /* Mini screens 500 */
