@@ -309,6 +309,7 @@ a:visited {
     background-color:rgb(253, 253, 253);
     text-align: center;
     display: block;
+    margin: 0 auto;
     height: 300px;
 }
 
@@ -317,7 +318,8 @@ a:visited {
     text-align: center;
     display: block;
     color:white;
-    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 div .descriptionHeading {
@@ -326,11 +328,12 @@ div .descriptionHeading {
     color: #333333;
     width: 500px;
     padding-left: 260px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .socialmediaIcons{
-    padding-top: 3px;
+    padding: 2px;
+    margin: 3px;
     width: 30px;
     height: 30px;
 }
@@ -341,7 +344,7 @@ div .creditsHeading {
     color: #333333;
     width: 500px;
     padding-left: 180px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 div .contactHeading {
@@ -350,7 +353,7 @@ div .contactHeading {
     color: rgb(253, 253, 253);
     width: 500px;
     padding-left: 200px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 div .descriptionHeading,
@@ -553,13 +556,38 @@ div .creditsHeading {
         margin-bottom: 40px;
     }
 
+    div .descriptionHeading {
+        padding-left: 280px;
+        margin-left: 220px;
+    }
+    
+    div .creditsHeading {
+        padding-left: 220px;
+        margin-left: 220px;
+    }
+    
+    div .contactHeading {
+        padding-left: 240px;
+        margin-left: 220px;
+    }
+
+    .descriptionInfo {
+        max-width: 38%;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+
+    .contactInfo {
+        font-size: 1.4em;
+    }
+
+    
+
 }
-
-
 
 /* Max-width 1100 */
 
-@media all and (max-width:1100px) { 
+@media all and (max-width:1000px) { 
 
     .logoImg {
         max-width: 15%;
@@ -571,6 +599,27 @@ div .creditsHeading {
 
     .logoTLU {
         max-width: 25%;
+    }
+
+    div .descriptionHeading,
+    div .contactHeading,
+    div .creditsHeading {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+
+    div .descriptionHeading,
+    div .contactHeading,
+    div .creditsHeading {
+        padding: 25px 0;
+        margin: 0 auto;
+        font-size: 2.2em;
+    }
+
+    .descriptionInfo {
+        max-width: 40%;
+        margin: 0 auto;
+        text-align: justify;
     }
 
 }
@@ -779,6 +828,17 @@ div .creditsHeading {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+
+    .descriptionInfo,
+    .creditsInfo,
+    .contactInfo {
+        font-size: 1.2em;
+    }
+
+    .descriptionInfo {
+        max-width: 60%;
+        text-align: left;
     }
 }
 
