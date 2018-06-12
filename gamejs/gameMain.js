@@ -37,6 +37,7 @@ let GAME_STATE = 0
 let TURN_COUNT = 0
 let winnerSlots = []
 let slotStates = [0,0,0,0,0]
+let buttonStates = [0,0,0,0,0]
 let ideaBox = ""
 
 /*
@@ -79,11 +80,6 @@ window.onload = function(){
     document.getElementById(HOLD_BUTTON_3).disabled = true
     document.getElementById(HOLD_BUTTON_4).disabled = true
     document.getElementById(HOLD_BUTTON_5).disabled = true
-	document.getElementById("holdButton1").addEventListener("click", lockBtn1);
-	document.getElementById("holdButton2").addEventListener("click", lockBtn2);
-	document.getElementById("holdButton3").addEventListener("click", lockBtn3);
-	document.getElementById("holdButton4").addEventListener("click", lockBtn4);
-	document.getElementById("holdButton5").addEventListener("click", lockBtn5);
 
     load_status = "Loading completed!"
     document.getElementById("loaderBody").style.display = "none" // Hides loading screen
@@ -95,42 +91,19 @@ window.onload = function(){
     Game Controller
 
 */
-function lockBtn1(){
-	document.getElementById("lock1").src = "img/lock_locked.svg"
-	document.getElementById("holdButton1").style.backgroundColor = "#B5121B"
-	document.getElementById(HOLD_BUTTON_1).disabled = true
-}
-
-function lockBtn2(){
-	document.getElementById("lock2").src = "img/lock_locked.svg"
-	document.getElementById("holdButton2").style.backgroundColor = "#B5121B"
-	document.getElementById(HOLD_BUTTON_2).disabled = true	
-}
-
-function lockBtn3(){
-	document.getElementById("lock3").src = "img/lock_locked.svg"
-	document.getElementById("holdButton3").style.backgroundColor = "#B5121B"
-	document.getElementById(HOLD_BUTTON_3).disabled = true
-}
-
-function lockBtn4(){
-	document.getElementById("lock4").src = "img/lock_locked.svg"
-	document.getElementById("holdButton4").style.backgroundColor = "#B5121B"
-	document.getElementById(HOLD_BUTTON_4).disabled = true
-}
-
-function lockBtn5(){
-	document.getElementById("lock5").src = "img/lock_locked.svg"
-	document.getElementById("holdButton5").style.backgroundColor = "#B5121B"
-	document.getElementById(HOLD_BUTTON_5).disabled = true
-}
 
 function holdButtonToggler(holdButtonNumber){
-    if(slotStates[holdButtonNumber] == 0){
-        slotStates[holdButtonNumber] = 1
+    if(slotStates[holdButtonNumber-1] == 0){
+        slotStates[holdButtonNumber-1] = 1
+        buttonStates[holdButtonNumber-1] = 1
+        document.getElementById("lock"+holdButtonNumber).src = "img/lock_locked.svg"
+        document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#B5121B"
     }
     else{
-        slotStates[holdButtonNumber] = 0
+        slotStates[holdButtonNumber-1] = 0
+        buttonStates[holdButtonNumber-1] = 0
+        document.getElementById("lock"+holdButtonNumber).src = "img/lock_open.svg"
+        document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#D3D3D3"
     }
 }
 
@@ -191,7 +164,13 @@ function initGame(){
 				roll.pause()
                 clearInterval(timerloop) // Loop end
                 GAME_STATE = 0
-                slotStates = [0,0,0,0,0]
+                for(let i=0; i<slotStates.length; i++){
+                    if(buttonStates[i] === 1){
+                        slotStates[i] = 1
+                    }else{
+                        slotStates[i] = 0
+                    }
+                }
                 ideaBox.innerHTML = winnerSlots[2].sentence+" game for "+winnerSlots[0].sentence+" with "+winnerSlots[3].sentence+
                 " that is based on "+winnerSlots[4].sentence+" and the need for "+winnerSlots[1].sentence
                 document.getElementById(ROLL_BUTTON).disabled = false
@@ -200,16 +179,6 @@ function initGame(){
                 document.getElementById(HOLD_BUTTON_3).disabled = false
                 document.getElementById(HOLD_BUTTON_4).disabled = false
                 document.getElementById(HOLD_BUTTON_5).disabled = false
-				document.getElementById("lock1").src="img/lock_open.svg"
-				document.getElementById("holdButton1").style.backgroundColor = "#D3D3D3"
-				document.getElementById("lock2").src="img/lock_open.svg"
-				document.getElementById("holdButton2").style.backgroundColor = "#D3D3D3"
-				document.getElementById("lock3").src="img/lock_open.svg"
-				document.getElementById("holdButton3").style.backgroundColor = "#D3D3D3"
-				document.getElementById("lock4").src="img/lock_open.svg"
-				document.getElementById("holdButton4").style.backgroundColor = "#D3D3D3"
-				document.getElementById("lock5").src="img/lock_open.svg"
-				document.getElementById("holdButton5").style.backgroundColor = "#D3D3D3"
             }
         }
         
