@@ -125,9 +125,10 @@ h1 {
     content: "";
     display: block;
     border-radius: 50%;
-    border: 1px solid black;
-    padding: 80px;
-    margin: -147px 0 0 9px;
+    padding: 75px;
+    margin: -142px 0 0 14px;
+    -webkit-box-shadow: 1px 1px 10px rgb(225, 147, 147);
+            box-shadow: 1px 1px 10px rgb(160, 65, 65);
 }
 
 .gameHoldBtn {

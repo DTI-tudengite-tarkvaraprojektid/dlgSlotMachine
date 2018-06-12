@@ -91,11 +91,18 @@ function randomSlotPosition(slotArray){
 }
 
 function slotAnimation(slotArray, canvas, speed){
-    let c = document.getElementById(canvas)
-    let range = -(slotArray.length*64)
-    c.style.top = c.offsetTop-speed+"px"
-    if(c.offsetTop <= range){
-        c.style.top = 0+"px"
+    if(window.innerWidth < 800){
+        let c = document.getElementById(canvas)
+        let d = document.getElementById("m"+canvas)
+        c.style.display = "none"
+        d.style.display = "block"
+    }else{
+        let c = document.getElementById(canvas)
+        let range = -(slotArray.length*64)
+        c.style.top = c.offsetTop-speed+"px"
+        if(c.offsetTop <= range){
+            c.style.top = 0+"px"
+        }
     }
 
 }
