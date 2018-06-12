@@ -845,8 +845,9 @@ div .creditsHeading {
 
     .modal {
         width: 180vw;
+        height: 120vh;
     }
-    
+
 }
 
 /* Max-width 1000 */
