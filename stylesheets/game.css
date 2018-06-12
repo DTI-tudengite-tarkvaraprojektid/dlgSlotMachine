@@ -896,5 +896,6 @@ div .creditsHeading {
     div .contactHeading,
     div .creditsHeading {
         font-size: 1.6em;
+        width: 300px;
     }
 }
