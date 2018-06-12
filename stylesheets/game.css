@@ -842,6 +842,11 @@ div .creditsHeading {
         text-align: left;
         margin: 0 auto;
     }
+
+    .modal {
+        width: 180vw;
+    }
+    
 }
 
 /* Max-width 1000 */
