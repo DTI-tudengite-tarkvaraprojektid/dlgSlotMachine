@@ -24,7 +24,7 @@ let HOLD_BUTTON_2 = "holdButton2"
 let HOLD_BUTTON_3 = "holdButton3"
 let HOLD_BUTTON_4 = "holdButton4"
 let HOLD_BUTTON_5 = "holdButton5"
-let INITIAL_SPEED = 48
+let INITIAL_SPEED = 15
 
 //System defined globals
 let SLOT_1
@@ -155,7 +155,12 @@ function initGame(){
     document.getElementById(HOLD_BUTTON_5).disabled = true
     let counter = 0
     let gameDone = 0
-    let start_gap = 150
+    let start_gap = 0
+    if(window.innerWidth > 800){
+        start_gap = 150
+    }else{
+        start_gap = 75
+    }
     let stop_gap = 50
     let slotsClosed = 0
     let SPEED = INITIAL_SPEED 
@@ -177,6 +182,7 @@ function initGame(){
         if(counter>start_gap){
             if(slotStates[slotsClosed] == 0){
                 document.getElementById(SLOTCANVAS[slotsClosed]).style.top = -winnerSlots[slotsClosed].winPos+"px"
+                document.getElementById(SLOTCANVAS[slotsClosed]).style.display = "block"
                 slotStates[slotsClosed] = 1
             }
             slotsClosed += 1
