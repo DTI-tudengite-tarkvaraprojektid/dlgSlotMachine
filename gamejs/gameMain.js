@@ -146,7 +146,7 @@ function selectWinners(){
 function initGame(){
     GAME_STATE = 1
     TURN_COUNT += 1
-    document.getElementById("ideaText").innerHTML = "Calculating..."
+    document.getElementById("ideaText").innerHTML = "Generating..."
     document.getElementById(ROLL_BUTTON).disabled = true
     document.getElementById(HOLD_BUTTON_1).disabled = true
     document.getElementById(HOLD_BUTTON_2).disabled = true

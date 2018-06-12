@@ -218,7 +218,7 @@ h1 {
     border-radius: 0 15px 15px 0; 
     padding: 8px;
     margin: 0 15px 0 10px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     -webkit-box-shadow: 1px 1px 10px rgb(209, 209, 209);
             box-shadow: 1px 1px 10px rgb(209, 209, 209);
 }
@@ -351,13 +351,6 @@ div .descriptionHeading {
 
 }
 
-.socialmediaIcons{
-    padding: 2px;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
-}
-
 div .creditsHeading {
     font-size: 2.6em;
     font-weight: 800;
@@ -416,6 +409,13 @@ div .creditsHeading {
     font-size: 1.2em;
     line-height: 1.6em;
     text-align: center;
+}
+
+.socialmediaIcons{
+    padding: 2px;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -547,118 +547,81 @@ div .creditsHeading {
     background-color: black;
 }
 
-/* Min-width 1500 */
+/* Mini screens 500 */
 
-@media (min-width:1500px) {
-
-    .logoImg {
-        margin-top: 30px;
-        margin-bottom: 60px;
-        display: block;
-    }
-
-    .logoHeading {
-        max-width: 40%;
-    }
-
-    .categoryList {
-        margin-top: 20px;
-    }
-
-    .gameHoldBtn {
-        margin-bottom: 60px;
-    }
-
-    .ideaGrid {
-        margin-bottom: 40px;
-    }
-
-    h3 {
-        font-size: 2.2em;
-        margin-bottom: 60px;
-    }
-
+@media all and (max-width: 500px) {
     .menuList {
-        margin-bottom: 60px;
+        max-width: 40%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
-    .logoTLU{
-        margin-bottom: 40px;
+    .menuItem {
+        margin-bottom: 5px;
+        font-size: 1em;
     }
-
-    /* div .descriptionHeading {
-        padding-left: 280px;
-        margin-left: 220px;
-    }
-    
-    div .creditsHeading {
-        padding-left: 220px;
-        margin-left: 220px;
-    }
-    
-    div .contactHeading {
-        padding-left: 240px;
-        margin-left: 220px;
-    }
-
-    .descriptionInfo {
-        max-width: 38%;
-        margin-bottom: 10px;
-        font-size: 1.4em;
-    }
-
-    .contactInfo {
-        font-size: 1.4em;
-    } */
-
-}
-
-/* Max-width 1100 */
-
-@media all and (max-width:1000px) { 
 
     .logoImg {
-        max-width: 15%;
+        max-width: 20%;
+        margin-bottom: 20px;
     }
     
     .logoHeading {
-        max-width: 45%;
+        max-width: 65%;
     }
 
     .logoTLU {
-        max-width: 25%;
+        max-width: 45%;
     }
 
-    #description,
-    #credits,
-    #contact {
+    /* idea */
+
+    .idea {
+        position:relative;
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .ideaGrid {
         display: block;
+    }
+
+    .ideaHeading {
+        font-size: 1.2em;
+        margin: 0 auto 10px auto;
+        width: 100px;
+        border-radius: 0;
+        font-style: normal;
+    }
+
+    .ideaText {
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+
+    h3 {
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-bottom: 25px;
     }
 
     div .descriptionHeading,
     div .contactHeading,
     div .creditsHeading {
-        padding: 0;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto 10px auto;
-        font-size: 2.2em;
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+        font-size: 1.6em;
+        width: 300px;
     }
 
     .descriptionInfo {
-        max-width: 70%;
-        text-align: justify;
+        width: 300px;
+        margin: 0 auto;
     }
-
-    .creditsInfo {
-        text-align: center;
-    }
-
 }
 
-/* Medium screens */
+/* Medium screens 800 */
 @media all and (max-width: 800px) {
 
     .categoryList,
@@ -862,6 +825,12 @@ div .creditsHeading {
         margin: 0 auto;
     }
 
+    .description,
+    .credits,
+    .contact {
+        padding: 40px 0;
+    }
+
     .descriptionInfo,
     .creditsInfo,
     .contactInfo {
@@ -875,69 +844,96 @@ div .creditsHeading {
     }
 }
 
-@media all and (max-width: 500px) {
-    .menuList {
-        max-width: 40%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
+/* Max-width 1000 */
 
-    .menuItem {
-        margin-bottom: 5px;
-        font-size: 1em;
-    }
+@media all and (max-width:1000px) { 
 
     .logoImg {
-        max-width: 20%;
-        margin-bottom: 20px;
+        max-width: 15%;
     }
     
     .logoHeading {
-        max-width: 65%;
-    }
-
-    .logoTLU {
         max-width: 45%;
     }
 
-    /* idea */
-
-    .idea {
-        position:relative;
-        width: 300px;
-        margin: 0 auto;
+    .logoTLU {
+        max-width: 25%;
     }
-    
-    .ideaGrid {
+
+    #description,
+    #credits,
+    #contact {
         display: block;
-    }
-
-    .ideaHeading {
-        font-size: 1.2em;
-        margin: 0 auto 10px auto;
-        width: 100px;
-        border-radius: 0;
-        font-style: normal;
-    }
-
-    .ideaText {
-        border-radius: 4px;
-        margin-bottom: 30px;
-    }
-
-
-    h3 {
-        font-size: 1.4em;
-        font-weight: 400;
-        margin-bottom: 25px;
     }
 
     div .descriptionHeading,
     div .contactHeading,
     div .creditsHeading {
-        font-size: 1.6em;
-        width: 300px;
+        padding: 0;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto 10px auto;
+        font-size: 2.2em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
+    .creditsInfo {
+        text-align: center;
+    }
+
 }
+
+/* Min-width 1500 */
+
+@media all and (min-width:1500px) {
+
+    .logoImg {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        display: block;
+    }
+
+    .logoHeading {
+        max-width: 42%;
+        margin-bottom: 40px;
+    }
+
+    .categoryList {
+        margin-top: 20px;
+    }
+
+    .gameHoldBtn {
+        margin-bottom: 60px;
+    }
+
+    .ideaGrid {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: 2.2em;
+        margin-bottom: 80px;
+    }
+
+    .menuList {
+        margin-bottom: 70px;
+    }
+
+    .logoTLU{
+        margin-bottom: 50px;
+    }
+
+    div .descriptionHeading,
+    div .creditsHeading,
+    div .contactHeading  {
+        margin-left: -200px;
+    }
+
+    .descriptionInfo {
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+}
+
