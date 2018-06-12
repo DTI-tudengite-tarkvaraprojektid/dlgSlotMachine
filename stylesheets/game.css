@@ -539,6 +539,7 @@ div .creditsHeading {
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
+
 .loaderBody{
     position: absolute;
     z-index: 998;
@@ -547,9 +548,10 @@ div .creditsHeading {
     background-color: black;
 }
 
-/* Max-width 1000 */
 
-@media all and (max-width:1000px) { 
+/* Max-width 1100 */
+
+@media all and (max-width:1100px) { 
 
     .logoImg {
         max-width: 15%;
@@ -598,25 +600,22 @@ div .creditsHeading {
 
     .gameBody {
         display: grid;
-        width: 240px;
-        grid-template-columns: 40px 160px 40px;
+        width: 210px;
+        grid-template-columns: 40px 120px 40px;
         grid-gap: 5px;
-        grid-auto-rows: 120px 120px 120px 120px 120px;
-        margin: 0 auto 650px auto;
+        margin: 0 auto;
     }
 
     .categoryList,
     .gameHoldBtn {
         display: grid;
         grid-template-columns: 40px;
-        grid-gap: 5px;
         grid-auto-rows: 120px 120px 120px 120px 120px;
     }
 
     .gameBodySlots {
         display: grid;
-        grid-template-columns: 160px;
-        grid-gap: 5px;
+        grid-template-columns: 120px;
         grid-auto-rows: 120px 120px 120px 120px 120px;
     }
 
@@ -712,26 +711,29 @@ div .creditsHeading {
         text-align: center;
         font-style: italic;
         font-size: 1em;
+        height: 30px;
+        width: 100px;
+        margin-top: 35px;
+        margin-left: -25px;
         text-transform: uppercase; 
         background: #B5121B;
         border-radius: 15px 15px 0 0;
         -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg);
-        display: block;
-        width: 100px;
-        margin: auto 0 auto -12px;
+
+        /* margin: auto 0 auto -12px; */
     }
 
     .gameSlotItem {
-        margin-top: 10px;
+        margin: 0;
     }
 
     .gameHoldItem{
         width: 38px;
         height: 100px;
         margin: 0;
-        margin-top: 10px;
-        margin-left: -15px;
+        /* margin-top: 10px;
+        margin-left: -15px; */
         border-radius: 0 15px 15px 0;
         padding-left: 8px;
     }
@@ -741,14 +743,15 @@ div .creditsHeading {
     }
     
     .gameStart {
+        padding: 20px;
         font-size: 1.6em;
-        margin: 10px auto 10px auto;
-        margin-left: 8px;
+        margin-top: 10px;
+        margin-left: 9px;
     }
-
+    
     .gameStartBtn::after {
-        padding: 70px;
-        margin: -140px 0 0 0;
+        padding: 60px;
+        margin: -110px 0 0 0;
     }
 
     /* idea */
@@ -762,7 +765,7 @@ div .creditsHeading {
     .ideaGrid {
         display: grid;
         grid-template-columns: 100px 420px;
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -844,23 +847,7 @@ div .creditsHeading {
     .logoTLU {
         max-width: 50%;
     }
-
-    .gameStart {
-        padding: 20px;
-        font-size: 1.6em;
-    }
     
-    .gameStartBtn::after {
-        content: "";
-        display: block;
-        border-radius: 50%;
-        padding: 55px;
-        margin: -105px 0 0 6px;
-        -webkit-box-shadow: 1px 1px 10px rgb(225, 147, 147);
-                box-shadow: 1px 1px 10px rgb(160, 65, 65);
-    }
-    
-
     /* idea */
 
     .idea {
