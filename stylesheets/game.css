@@ -155,7 +155,7 @@ h1 {
 
 /* Button blinking */
 
-/* .blinking b{
+.blinking b{
     color: #FFFAFA;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #a01b1b, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 5px 3px #000;
   }
@@ -191,7 +191,7 @@ h1 {
       text-shadow: none;
     }
 
-  } */
+  }
 
 /* Idea */
 
@@ -403,6 +403,7 @@ div .creditsHeading {
     grid-row: 1;
     display: block;
     margin: 0 auto;
+    max-width: 85%;
     color: rgb(46, 46, 46);;
     font-size: 1.2em;
     line-height: 1.6em;
@@ -420,10 +421,19 @@ div .creditsHeading {
 }
 
 .socialmediaIcons{
-    padding: 2px;
+    padding: 5px;
     margin: 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.smIconsSmall {
     width: 30px;
     height: 30px;
+}
+
+.smIcons {
+    margin-top: -10px;
 }
 
 
@@ -804,10 +814,6 @@ div .creditsHeading {
         transform: rotate(0deg);
     }
 
-    .creditsInfo {
-        text-align: center;
-    }
-
     .descriptionGrid,
     .creditsGrid,
     .contactGrid {
@@ -915,10 +921,20 @@ div .creditsHeading {
         width: 200px;
     }
 
-    .descriptionInfo {
+    .descriptionInfo,
+    .creditsInfo {
         max-width: 100%;
         width: 300px;
         margin: 0 auto;
+    }
+
+    .gameStart {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .gameStartBtn::after {
+        display: none;
     }
 }
 

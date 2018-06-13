@@ -14,11 +14,11 @@ $(document).ready(function () {
 
   function onScroll(event){
     var scrollPos = $(document).scrollTop() +50;
-    $('.menu a').each(function () {
+    $('.menu menuLink').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('.menu a').removeClass("active");
+        $('.menu menuLink').removeClass("active");
         currLink.addClass("active");
       }
       else{
