@@ -155,11 +155,7 @@ h1 {
 
 /* Button blinking */
 
-<<<<<<< HEAD
 .blinking b{
-=======
- .blinking b{
->>>>>>> 59c4c9b2b56d3a87f121f95b61337b864f8298ce
     color: #FFFAFA;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #a01b1b, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 5px 3px #000;
   }
@@ -194,12 +190,7 @@ h1 {
       color: #B5121B;
       text-shadow: none;
     }
-
-<<<<<<< HEAD
-  }
-=======
-  } 
->>>>>>> 59c4c9b2b56d3a87f121f95b61337b864f8298ce
+}
 
 /* Idea */
 
