@@ -94,10 +94,19 @@ window.onload = function(){
 
 function holdButtonToggler(holdButtonNumber){
     if(slotStates[holdButtonNumber-1] == 0){
-        slotStates[holdButtonNumber-1] = 1
-        buttonStates[holdButtonNumber-1] = 1
-        document.getElementById("lock"+holdButtonNumber).src = "img/lock_locked.svg"
-        document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#B5121B"
+        let buttonControl = buttonStates[0]+buttonStates[1]+buttonStates[2]+buttonStates[3]+buttonStates[4]
+        if(buttonControl >= 3){
+            slotStates[holdButtonNumber-1] = 0
+            buttonStates[holdButtonNumber-1] = 0
+            document.getElementById("lock"+holdButtonNumber).src = "img/lock_open.svg"
+            document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#E7E7E7"
+
+        }else{
+            slotStates[holdButtonNumber-1] = 1
+            buttonStates[holdButtonNumber-1] = 1
+            document.getElementById("lock"+holdButtonNumber).src = "img/lock_locked.svg"
+            document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#B5121B"
+        }
     }
     else{
         slotStates[holdButtonNumber-1] = 0
