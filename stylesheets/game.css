@@ -46,7 +46,8 @@ h1 {
 .categoryList {
     display: grid;
     list-style: none;
-    grid-template-columns: 152px 152px 152px 152px 152px;
+    grid-template-columns: 122px 122px 122px 122px 122px;
+    grid-gap: 30px;
     padding-left: 0;
     margin-bottom: 5px;
 }
@@ -59,14 +60,13 @@ h1 {
     font-size: 1.2em;
     text-transform: uppercase; 
     background: #B5121B;
-    margin: 0 15px;
     padding: 10px;
     border-radius: 15px 15px 0 0;
 }
 
 .gameBody{
     position: relative;
-    width: 760px;
+    width: 730px;
     margin: 0 auto;
 }
 
@@ -84,13 +84,15 @@ h1 {
 
 .gameGrid {
     display: grid;
-    grid-template-columns: 152px 152px 152px 152px 152px 100px;
+    grid-template-columns: 122px 122px 122px 122px 122px 100px;
+    grid-template-rows: 100px;
+    grid-gap: 30px;
+    margin-bottom: 5px;
 }
 
 .gameSlotItem {
     background: rgb(253, 253, 253);  
     border: 1px solid #a3a2a2;
-    margin: 0 15px;
     height: 100px;
     overflow: hidden;
     /* -webkit-box-shadow: inset 0 0 4px #c5c4c4;
@@ -101,13 +103,14 @@ h1 {
 }
 
 .lock-icon {
-	vertical-align: middle;
-	height: 20px;
-	width: 20px;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
 }
 
 .gameStart {
     font-family: 'Times New Roman', Times, serif;
+    grid-column: 6;
     position: relative;
     border-radius: 50%;
     background-color: #B5121B;
@@ -133,16 +136,16 @@ h1 {
 
 .gameHoldBtn {
     display: grid;
-    grid-template-columns: 152px 152px 152px 152px 152px;
-    margin-bottom: 20px;
+    grid-template-columns: 122px 122px 122px 122px 122px;
+    grid-gap: 30px;
 }
 
 .gameHoldItem {
-    margin: -15px 15px 5px 15px;
     border-radius: 0 0 15px 15px; 
     padding: 10px;
     background-color: rgb(231, 231, 231);
     border: none;
+    margin-bottom: 20px;
 }
 
 
@@ -347,7 +350,7 @@ div .descriptionHeading {
     width: 400px;
     height: 100px;
     padding-left: 120px;
-    margin-left: -170px;
+    margin-left: -190px;
 
 }
 
@@ -358,7 +361,7 @@ div .creditsHeading {
     width: 400px;
     height: 100px;
     padding-left: 60px;
-    margin-left: -170px;
+    margin-left: -190px;
 }
 
 div .contactHeading {
@@ -368,7 +371,7 @@ div .contactHeading {
     width: 400px;
     height: 100px;
     padding-left: 60px;
-    margin-left: -170px;
+    margin-left: -190px;
 }
 
 div .descriptionHeading,
@@ -565,26 +568,29 @@ div .creditsHeading {
         max-width: 25%;
     }
 
-    #description,
-    #credits,
-    #contact {
-        display: block;
+    .gameHoldItem {
+        margin-top: 5px;
+        margin-bottom: 160px;
     }
 
-    div .descriptionHeading,
-    div .contactHeading,
-    div .creditsHeading {
-        padding: 0;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto 10px auto;
-        font-size: 2.2em;
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+    
+    .gameStartBtn {
+        margin: 0 auto;
+        position: absolute;
+        left: 42%;
+        top: 170%;
     }
-
-    .creditsInfo {
-        text-align: center;
+    
+    .gameStart {
+        padding: 20px;
+        font-size: 1.6em;
+        margin-top: 10px;
+        margin-left: 9px;
+    }
+    
+    .gameStartBtn::after {
+        padding: 60px;
+        margin: -110px 0 0 0;
     }
 
 }
@@ -610,13 +616,15 @@ div .creditsHeading {
     .gameHoldBtn {
         display: grid;
         grid-template-columns: 40px;
-        grid-auto-rows: 120px 120px 120px 120px 120px;
+        grid-auto-rows: 100px 100px 100px 100px 100px;
+        grid-gap: 15px;
     }
 
     .gameBodySlots {
         display: grid;
         grid-template-columns: 120px;
-        grid-auto-rows: 120px 120px 120px 120px 120px;
+        grid-auto-rows: 100px 100px 100px 100px 100px;
+        grid-gap: 15px;
     }
 
     /* headers */
@@ -707,39 +715,27 @@ div .creditsHeading {
     }
 
     .categoryItem {
-        color: rgb(253, 253, 253);
-        text-align: center;
-        font-style: italic;
         font-size: 1em;
         height: 30px;
         width: 100px;
         margin-top: 35px;
         margin-left: -25px;
-        text-transform: uppercase; 
-        background: #B5121B;
-        border-radius: 15px 15px 0 0;
         -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg);
-
-        /* margin: auto 0 auto -12px; */
-    }
-
-    .gameSlotItem {
-        margin: 0;
     }
 
     .gameHoldItem{
         width: 38px;
         height: 100px;
         margin: 0;
-        /* margin-top: 10px;
-        margin-left: -15px; */
         border-radius: 0 15px 15px 0;
         padding-left: 8px;
     }
 
     .gameStartBtn {
-        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     
     .gameStart {
@@ -759,7 +755,7 @@ div .creditsHeading {
     .idea {
         position:relative;
         width: 480px;
-        margin: 0 auto;
+        margin-top: 40px;
     }
     
     .ideaGrid {
@@ -768,7 +764,6 @@ div .creditsHeading {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
 
     h3 {
         font-size: 1.4em;
@@ -784,6 +779,28 @@ div .creditsHeading {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+
+    #description,
+    #credits,
+    #contact {
+        display: block;
+    }
+
+    div .descriptionHeading,
+    div .contactHeading,
+    div .creditsHeading {
+        padding: 0;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto 10px auto;
+        font-size: 2.2em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .creditsInfo {
+        text-align: center;
     }
 
     .descriptionGrid,
@@ -852,8 +869,8 @@ div .creditsHeading {
 
     .idea {
         position: relative;
-        width: 300px;
-        margin: 0 auto;
+        width: 350px;
+        margin: 30px auto 0 auto;
     }
     
     .ideaGrid {
@@ -894,9 +911,15 @@ div .creditsHeading {
     }
 
     .descriptionInfo {
-        max-width: 90%;
+        max-width: 100%;
         width: 300px;
         margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .idea {
+        width: 300px;
     }
 }
 
@@ -905,14 +928,20 @@ div .creditsHeading {
 @media all and (min-width:1500px) {
 
     .logoImg {
-        margin-top: 30px;
-        margin-bottom: 60px;
+        max-width: 16%;
+        margin-top: 40px;
+        margin-bottom: 40px;
         display: block;
     }
 
     .logoHeading {
-        max-width: 42%;
-        margin-bottom: 40px;
+        max-width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .logoTLU{
+        margin-bottom: 50px;
+        max-width: 15%;
     }
 
     .categoryList {
@@ -936,19 +965,22 @@ div .creditsHeading {
         margin-bottom: 70px;
     }
 
-    .logoTLU{
-        margin-bottom: 50px;
+    #description,
+    #credits,
+    #contact {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     div .descriptionHeading,
     div .creditsHeading,
     div .contactHeading  {
-        margin-left: -200px;
+        margin-left: -240px;
     }
 
     .descriptionInfo {
         max-width: 100%;
-        margin-left: 20px;
+        line-height: 1.8em;
     }
 
 }

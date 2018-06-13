@@ -8,7 +8,7 @@
     <script>let fromDatabase=[["1","targetGroup","Colour%Information","Understand how the color information is stored in the computer","adult market"],["2","targetGroup","Eksam","Game for Adults market","adults"],["3","problem","maths","Game about maths","maths"],["4","genre","action","action game","action"],["5","eksam","eksam","eksam","eksam"],["6","designElement","test","test","test"],["7","learningMethod","Eksam","test","test"],["8","targetGroup","Kids","game for kids","kids"],["9","targetGroup","Teenagers","game for teenagers","teenagers"],["10","genre","RPG","RPG game","role playing game"],["11","genre","mystery","mystery game","mystery"],["12","eksam","eksam","eksam","eksam"],["13","eksam","eksam","eksam","eksam"],["14","eksam","Eksam","eksam","eksam"],["15","Eksam","Eksam","Eksam","Eksam"],["16","eksam","eksam","eksam","eksam"],["17","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"]]</script>
     <script src="./db_handler/dataHandler.js"></script>
 	<script src="./gamejs/slot.js"></script>
-	<script src="./gamejs/gameMain.js"></script>
+    <script src="./gamejs/gameMain.js"></script>
     <title>Game Idea Bandit</title>
 
 </head>
@@ -20,6 +20,7 @@
 
     <div class="gradient">
     <img src="img/dlg.svg" alt="Digital Learning Games logo" class="logoImg">
+    <a href="https://www.tlu.ee" target="_blank" class="linkLogoTLU"><img src="img/tlu.svg" alt="Tallinn University logo" class="logoTLU"></a>
     <img src="img/heading.svg" alt="Digital Learning Games, Idea Generating Machine" class="logoHeading">
 
 
@@ -88,15 +89,13 @@
 
     <div class="menu">
         <ul class="menuList">
-            <li class="menuItem"><a href="#description" class="js-scroll-nav">About DLG</a></li>
+            <li class="menuItem"><a href="#description" id="about" class="js-scroll-nav js-btn">About DLG</a></li>
             <li class="menuItem"><a href="https://estonia.dreamapply.com/courses/course/375-msc-digital-learning-games" target="_blank">Apply</a></li>
             <li class="menuItem"><a href="#credits" class="js-scroll-nav">Credits</a></li>
             <li class="menuItem"><a href="#contact" class="js-scroll-nav">Contacts</a></li>
             <li class="menuItem menuR"><a href="" ></a></li>
         </ul>
     </div>
-
-    <a href="https://www.tlu.ee" target="_blank" class="linkLogoTLU"><img src="img/tlu.svg" alt="Tallinn University logo" class="logoTLU"></a>
 </div>
 
     <div id="infoModal" class="modal">
@@ -122,7 +121,7 @@
 
     <div class="descriptionBg">
         <div class="descriptionGrid">
-            <div id="description" class="description">
+            <div id="description" class="description js-section">
                 <div class="descriptionHeading">About DLG</div>
                 <p class="descriptionInfo"><b>Digital Learning Games</b> (DLG) is a 2 years international postgraduate program in the Tallinn University. <br>
                 Our objective is to bring together people with different backgrounds: programmers, artists, teachers, psychologists and <br>
@@ -155,7 +154,8 @@
         </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="gamejs/scroll.js"></script>
 </body>
 </html>
 
