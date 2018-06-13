@@ -270,7 +270,7 @@ h3 {
     max-width: 13%;
 }
 
-a {
+.menuItem a {
     color: rgb(46, 46, 46);
 }
 
@@ -463,19 +463,21 @@ div .creditsHeading {
 }
 
 .socialmediaIcons{
-    padding: 5px;
-    margin: 3px;
-    width: 40px;
-    height: 40px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
 }
 
-.smIconsSmall {
-    width: 30px;
-    height: 30px;
+.contactInfo a {
+    color: #F6E2DA;
 }
 
-.smIcons {
-    margin-top: -10px;
+.contactInfo a:link {
+    text-decoration: #F6E2DA;
+}
+
+.contactInfo a:visited {
+    text-decoration: #F6E2DA;
 }
 
 
