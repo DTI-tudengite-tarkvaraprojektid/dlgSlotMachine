@@ -998,7 +998,8 @@ div .creditsHeading {
         margin-left: -240px;
     }
 
-    .descriptionInfo {
+    .descriptionInfo,
+    .creditsInfo {
         max-width: 100%;
         line-height: 1.8em;
     }
