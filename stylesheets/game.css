@@ -5,10 +5,6 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-<<<<<<< HEAD
-=======
-    background: linear-gradient(#6bcaba 1%,rgb(253, 253, 253) 15%); 
->>>>>>> bccc3ccf1c23aa2b6b5a920780fa8a4e4fda2da7
     margin: 0 auto;
 }
 
@@ -139,12 +135,7 @@ h1 {
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase; 
-<<<<<<< HEAD
     box-shadow: 0px 0px 15px #6bcaba;
-=======
-    box-shadow: 0px 0px 15px rgb(211, 54, 61);
-    outline: none;
->>>>>>> bccc3ccf1c23aa2b6b5a920780fa8a4e4fda2da7
 }
 
 .gameHoldBtn {
@@ -221,12 +212,7 @@ h1 {
     color: rgb(253, 253, 253);
     text-align: center;
     font-style: italic;
-<<<<<<< HEAD
     background: #6bcaba;
-=======
-    text-transform: uppercase; 
-    background: #B5121B;
->>>>>>> bccc3ccf1c23aa2b6b5a920780fa8a4e4fda2da7
     border-radius: 15px 0 0 15px;
     margin: 0 0 0 15px;
     padding: 8px;
