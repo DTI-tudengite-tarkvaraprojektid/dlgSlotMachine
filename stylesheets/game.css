@@ -989,8 +989,13 @@ div .creditsHeading {
         margin-bottom: 25px;
     }
 
+    #apply,
+    #credits {
+        padding: 40px 0;
+    }
+
     .descriptionGrid,
-    .applyGrid
+    .applyGrid,
     .creditsGrid,
     .contactGrid {
         width: 300px;
@@ -1006,6 +1011,7 @@ div .creditsHeading {
 
     .descriptionInfo,
     .applyInfo,
+    .contactInfo,
     .creditsInfo {
         max-width: 100%;
         width: 300px;
