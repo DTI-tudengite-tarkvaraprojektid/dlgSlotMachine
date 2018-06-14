@@ -39,6 +39,7 @@ canvas{
 h1 {
     color: #B5121B;
     font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
     font-size: 2.8em;
     text-align: center;
     font-weight: 600;
@@ -146,7 +147,7 @@ h1 {
     display: block;
     border-radius: 50%;
     padding: 64px;
-    margin: -119px 0 0 -7px;
+    margin: -119px 0 0 -8px;
     -webkit-box-shadow: 1px 1px 10px rgb(225, 147, 147);
             box-shadow: 1px 1px 10px rgb(160, 65, 65);
 }
@@ -216,7 +217,7 @@ h1 {
 .ideaGrid {
     display: grid;
     grid-template-columns: 100px 660px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .ideaHeading {
@@ -247,8 +248,8 @@ h3 {
     font-style: italic;
     font-weight: 500;
     font-size: 1.8em;
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 /* Menu */
@@ -256,9 +257,9 @@ h3 {
 .menuList {
     display: grid;
     list-style: none;
-    grid-template-columns: 148px 7px 146px 7px 146px 7px 146px 7px 146px;
+    grid-template-columns: 122px 30px 122px 30px 122px 30px 122px 30px 122px;
     margin: 0 auto;
-    width: 760px;
+    width: 730px;
     padding-left: 0;
     margin-bottom: 60px;
 }
@@ -288,6 +289,7 @@ a:visited {
     color: #6bcaba;
     position: relative;
     font-size: 1.2em;
+    margin: 0 auto;
 }
 
 .menuItem.noLine::after,
