@@ -290,6 +290,12 @@ a:visited {
 
 /* Menu underline */
 
+.menuItem.noLine::after,
+.menuItem.noLine:hover::after{	
+	display: none;
+}
+
+
 .menuItem,
 .applyBtn {
     display: inline-block;

@@ -25,6 +25,8 @@ let HOLD_BUTTON_3 = "holdButton3"
 let HOLD_BUTTON_4 = "holdButton4"
 let HOLD_BUTTON_5 = "holdButton5"
 let INITIAL_SPEED = 15
+let roll = new Audio("sound/rolling.wav")
+
 
 //System defined globals
 let SLOT_1
@@ -125,6 +127,26 @@ function selectWinners(){
     }
 }
 
+function audio(){
+	if(GAME_STATE == 1){
+		roll.currentTime = 0
+		roll.play()
+	}
+	if(GAME_STATE == 0){
+		roll.pause()
+	}
+}
+
+function muteAudio(){
+	if(roll.muted === false){
+		roll.muted = true
+		document.getElementById("sound").innerHTML = "Unmute"
+	} else {
+		roll.muted = false
+		document.getElementById("sound").innerHTML = "Mute"
+	}
+}
+
 function initGame(){
     GAME_STATE = 1
     TURN_COUNT += 1
@@ -145,12 +167,10 @@ function initGame(){
     }
     let stop_gap = 50
     let slotsClosed = 0
-    let SPEED = INITIAL_SPEED 
+    let SPEED = INITIAL_SPEED
+	audio()
     selectWinners()
 	
-	var roll = new Audio("sound/rolling.wav");
-		roll.play();
-
     var timerloop = setInterval(function(){
         for(let i = 0; i<SLOTS.length; i++){
             if(slotStates[i] == 0){
@@ -170,9 +190,9 @@ function initGame(){
             slotsClosed += 1
             start_gap = start_gap + stop_gap
             if(slotsClosed == 5){
-				roll.pause()
                 clearInterval(timerloop) // Loop end
                 GAME_STATE = 0
+				audio()
                 for(let i=0; i<slotStates.length; i++){
                     if(buttonStates[i] === 1){
                         slotStates[i] = 1
