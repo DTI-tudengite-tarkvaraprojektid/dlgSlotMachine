@@ -5,7 +5,6 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(#6bcaba 1%,rgb(253, 253, 253) 20%); 
     margin: 0 auto;
 }
 
@@ -37,7 +36,7 @@ canvas{
 
 
 h1 {
-    color: #B5121B;
+    color: rgb(8, 8, 8);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.8em;
@@ -46,12 +45,9 @@ h1 {
     letter-spacing: 4px;
     line-height: .9em;
     margin-bottom: 20px;
+
 }
   
-.strokeHeading {
-    -webkit-text-stroke: 1px rgb(41, 41, 41);
-    color: rgb(253, 253, 253);
-}
 
 .subHeading {
     color: rgb(61, 61, 61);
@@ -129,7 +125,7 @@ h1 {
     grid-column: 6;
     position: relative;
     border-radius: 50%;
-    background-color: #B5121B;
+    background-color: #6bcaba;
     border: none;
     color: white;
     padding: 20px;
@@ -138,7 +134,7 @@ h1 {
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase; 
-    box-shadow: 0px 0px 15px rgb(211, 54, 61);
+    box-shadow: 0px 0px 15px #6bcaba;
 }
 
 .gameHoldBtn {
@@ -168,7 +164,7 @@ button:focus {outline:0;}
 
  .blinking {
     color: #FFFAFA;
-    text-shadow: 0 -40px 100px, 0 0 3px, 0 0 1em #a01b1b, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 5px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 3px, 0 0 1em #6bcaba, 0 0 0.5em #3c9687, 0 0 0.1em #9fe4d8, 0 5px 3px #000;
   }
   .blinking span{
     animation: blink linear infinite 4s;
@@ -221,7 +217,7 @@ button:focus {outline:0;}
     color: rgb(253, 253, 253);
     text-align: center;
     font-style: italic;
-    background: #B5121B;
+    background: #6bcaba;
     border-radius: 15px 0 0 15px;
     margin: 0 0 0 15px;
     padding: 7px;
@@ -465,6 +461,84 @@ div .creditsHeading {
     grid-row: 2;
     margin: 40px auto 0 auto;
     max-width: 100%;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal_2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content_2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 50px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content_2, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.exit {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.exit:hover,
+.exit:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content_2 {
+        width: 100%;
+    }
 }
 
 .applyBtn {

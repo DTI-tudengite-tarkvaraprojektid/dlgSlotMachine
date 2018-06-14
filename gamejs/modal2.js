@@ -1,4 +1,4 @@
-var modal_2 = document.getElementById("imgModal");
+var modal_2 = document.getElementById("imgModal_2");
 var img = document.getElementById("short");
 var modalImg = document.getElementById("full");
 var span = document.getElementsByClassName("exit")[0]
