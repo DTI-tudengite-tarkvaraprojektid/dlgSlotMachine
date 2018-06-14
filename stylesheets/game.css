@@ -178,7 +178,7 @@ button:focus {outline:0;}
       text-shadow: inherit;
     }
     79%{
-       color:rgb(216, 25, 34);
+       color:#4a8c81;
     }
     80% {
       
@@ -189,7 +189,7 @@ button:focus {outline:0;}
       text-shadow: inherit;
     }
     82% {
-      color: rgb(202, 29, 37);
+      color: #53a093;
       text-shadow: none;
     }
     83% {
@@ -197,7 +197,7 @@ button:focus {outline:0;}
       text-shadow: inherit;
     }
     92.5% {
-      color: #B5121B;
+      color: #6bcaba;
       text-shadow: none;
     }
 } 
