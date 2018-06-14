@@ -500,7 +500,7 @@ div .creditsHeading {
 
 .modal {
     display: none; /* Hidden by default */
-    position: absolute; /* Middle of screen*/
+    position: fixed; /* Middle of screen*/
     z-index: 200; /* Sit on top */
     padding-top: 150px; /* Location of the box */
     left: 50%;
