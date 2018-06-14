@@ -663,8 +663,8 @@ div .creditsHeading {
     }
     
     .gameStartBtn::after {
-        padding: 60px;
-        margin: -110px 0 0 0;
+        padding: 50px;
+        margin: -93px 0 0 2px;
     }
 
 }
