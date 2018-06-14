@@ -107,7 +107,7 @@ function holdButtonToggler(holdButtonNumber){
             slotStates[holdButtonNumber-1] = 1
             buttonStates[holdButtonNumber-1] = 1
             document.getElementById("lock"+holdButtonNumber).src = "img/lock_locked.svg"
-            document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#B5121B"
+            document.getElementById("holdButton"+holdButtonNumber).style.backgroundColor = "#6bcaba"
         }
     }
     else{

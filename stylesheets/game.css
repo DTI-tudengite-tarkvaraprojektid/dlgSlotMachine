@@ -36,7 +36,7 @@ canvas{
 
 
 h1 {
-    color: rgb(8, 8, 8);
+    color: rgb(27, 27, 27);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 2.8em;
@@ -72,6 +72,7 @@ h1 {
     font-weight: 500;
     padding: 10px;
     border-radius: 15px 15px 0 0;
+    box-shadow: 0px 0px 2px rgb(168, 168, 168);
 }
 
 .gameBody{
@@ -151,9 +152,16 @@ h1 {
     background-color: rgb(231, 231, 231);
     border: none;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 2px rgb(168, 168, 168);
 
 }
 
+button:active {
+    outline: none;
+    border: none;
+}
+    
+button:focus {outline:0;}
 
 /* Button blinking */
 
@@ -543,12 +551,12 @@ div .creditsHeading {
     padding: 4px 10px;
     font-size: 1em;
     font-weight: 500;
-    background-color: rgb(204, 204, 204);
+    background-color: #6bcaba;
 }
 
 .applyBtn:hover {
-    background-color: rgb(71, 71, 71);
-    color: rgb(212, 212, 212);
+    background-color: rgb(59, 59, 59);
+    color: #6bcaba;
 }
 
 .applyInfo a {
@@ -966,14 +974,14 @@ div .creditsHeading {
     }
 
     .description,
-    .apply
+    .apply,
     .credits,
     .contact {
         padding: 40px 0;
     }
 
     .descriptionInfo,
-    .applyInfo
+    .applyInfo,
     .creditsInfo,
     .contactInfo {
         font-size: 1.2em;
@@ -1061,7 +1069,7 @@ div .creditsHeading {
     }
 
     .descriptionGrid,
-    .applyGrid
+    .applyGrid,
     .creditsGrid,
     .contactGrid {
         width: 300px;
@@ -1077,7 +1085,8 @@ div .creditsHeading {
 
     .descriptionInfo,
     .applyInfo,
-    .creditsInfo {
+    .creditsInfo,
+    .contactInfo {
         max-width: 100%;
         width: 300px;
         margin: 0 auto;
