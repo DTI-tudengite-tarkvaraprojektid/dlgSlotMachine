@@ -394,7 +394,7 @@ div .applyHeading {
 div .contactHeading {
     font-size: 2.6em;
     font-weight: 800;
-    color: #F6E2DA;
+    color: #E7E7E7;
     width: 400px;
     height: 100px;
     padding-left: 60px;
@@ -447,7 +447,7 @@ div .creditsHeading {
     grid-row: 1;
     display: block;
     margin: 0 auto;
-    color: #F6E2DA;
+    color: rgb(231, 231, 231);
     font-size: 1.2em;
     line-height: 1.6em;
     text-align: center;
@@ -504,7 +504,7 @@ div .creditsHeading {
 }
 
 .contactInfo a {
-    color: #F6E2DA;
+    color: #E7E7E7
 }
 
 .contactInfo a:link {
