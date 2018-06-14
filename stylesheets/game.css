@@ -444,7 +444,7 @@ div .creditsHeading {
     grid-row: 1;
     display: block;
     margin: 0 auto;
-    color: #F6E2DA;
+    color: rgb(231, 231, 231);
     font-size: 1.2em;
     line-height: 1.6em;
     text-align: center;
