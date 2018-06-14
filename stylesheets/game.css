@@ -40,7 +40,7 @@ h1 {
 }
   
   .strokeHeading {
-    color: rgb(242, 255, 228);
+      color: rgb(226,249, 245);
     -webkit-text-stroke: 1px black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
