@@ -31,13 +31,21 @@ canvas{
 }
 
 h1 {
-    color: #B5121B;
-    padding: 10px;
-    margin: 0 5px;
+    color: rgb(181,18,27);
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
     text-align: center;
-    font-style: italic;
-    text-transform: uppercase; 
+    font-weight: 900;
 }
+  
+  .strokeHeading {
+    color: rgb(242, 255, 228);
+    -webkit-text-stroke: 1px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+  }
 
 .subHeading {
     color: rgb(61, 61, 61);
@@ -485,7 +493,7 @@ div .creditsHeading {
 .modal {
     display: none; /* Hidden by default */
     position: absolute; /* Middle of screen*/
-    z-index: 15; /* Sit on top */
+    z-index: 200; /* Sit on top */
     padding-top: 150px; /* Location of the box */
     left: 50%;
     top: 50%;
