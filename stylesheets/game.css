@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(#6bcaba 1%,rgb(253, 253, 253) 20%); 
+    background: linear-gradient(#6bcaba 1%,rgb(253, 253, 253) 15%); 
     margin: 0 auto;
 }
 
@@ -76,7 +76,6 @@ h1 {
     font-weight: 500;
     padding: 10px;
     border-radius: 15px 15px 0 0;
-    box-shadow: 0px 0px 2px rgb(168, 168, 168);
 }
 
 .gameBody{
@@ -110,6 +109,8 @@ h1 {
     border: 1px solid #a3a2a2;
     height: 100px;
     overflow: hidden;
+    /* -webkit-box-shadow: inset 0 0 4px #c5c4c4;
+            box-shadow: inset 0 0 4px #c5c4c4; */
     -webkit-box-shadow: 
         inset 0px 11px 12px -8px #c5c4c4,
         inset 0px -11px 12px -8px #c5c4c4;
@@ -139,12 +140,14 @@ h1 {
     font-style: italic;
     text-transform: uppercase; 
     box-shadow: 0px 0px 15px rgb(211, 54, 61);
+    outline: none;
 }
 
 .gameHoldBtn {
     display: grid;
     grid-template-columns: 122px 122px 122px 122px 122px;
     grid-gap: 30px;
+    outline: none;
 }
 
 .gameHoldItem {
@@ -153,15 +156,8 @@ h1 {
     background-color: rgb(231, 231, 231);
     border: none;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 2px rgb(168, 168, 168);
-}
-    
-button:active {
-    outline: none;
-    border: none;
-}
 
-button:focus {outline:0;}
+}
 
 
 /* Button blinking */
@@ -221,10 +217,11 @@ button:focus {outline:0;}
     color: rgb(253, 253, 253);
     text-align: center;
     font-style: italic;
+    text-transform: uppercase; 
     background: #B5121B;
     border-radius: 15px 0 0 15px;
     margin: 0 0 0 15px;
-    padding: 7px;
+    padding: 8px;
     -webkit-box-shadow: 1px 1px 10px rgb(209, 209, 209);
             box-shadow: 1px 1px 10px rgb(209, 209, 209);
 }
@@ -468,22 +465,22 @@ div .creditsHeading {
 }
 
 .applyBtn {
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgb(214, 213, 213);
     text-align: center;
     border-radius: 10px;
     padding: 4px 10px;
     font-size: 1em;
     font-weight: 500;
-    background-color: #6bcaba;
+    background-color: rgb(204, 204, 204);
 }
 
 .applyBtn:hover {
-    background-color: rgb(44, 44, 44);
-    color: #6bcaba;
+    background-color: rgb(71, 71, 71);
+    color: rgb(212, 212, 212);
 }
 
 .applyInfo a {
-    color: rgb(63, 63, 63);;
+    color: rgb(46, 46, 46);;
 }
 
 .applyInfo a:link {
@@ -616,9 +613,10 @@ div .creditsHeading {
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
-    padding: 2px 16px;
+    padding: 2px 10px;
     background-color: #B5121B;
     color: white;
+    height:14px;
 }
 
 .loader {
@@ -673,6 +671,7 @@ div .creditsHeading {
         position: absolute;
         left: 44%;
         top: 170%;
+
     }
     
     .gameStart {
@@ -989,13 +988,8 @@ div .creditsHeading {
         margin-bottom: 25px;
     }
 
-    #apply,
-    #credits {
-        padding: 40px 0;
-    }
-
     .descriptionGrid,
-    .applyGrid,
+    .applyGrid
     .creditsGrid,
     .contactGrid {
         width: 300px;
@@ -1011,7 +1005,6 @@ div .creditsHeading {
 
     .descriptionInfo,
     .applyInfo,
-    .contactInfo,
     .creditsInfo {
         max-width: 100%;
         width: 300px;
