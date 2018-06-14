@@ -266,7 +266,6 @@ h3 {
 .menuItem {
     font-style: italic;
     text-align: center;
-    border-radius: 10px;
     font-size: 1.6em;
     font-weight: 400;
     z-index: 100;
@@ -296,6 +295,10 @@ a:visited {
 	display: none;
 }
 
+.menuItem.noLine {
+    color:rgb(46, 46, 46);
+}
+
 
 .menuItem,
 .applyBtn {
@@ -303,8 +306,7 @@ a:visited {
     text-decoration: none;
 }
 
-.menuItem::after,
-.applyBtn::after {
+.menuItem::after {
     content: '';
     display: block;
     width: 0px;
@@ -314,13 +316,12 @@ a:visited {
     transition: width .3s;
 }
 
-.menuItem:hover::after,
-.applyBtn:hover::after {
+.menuItem:hover::after{
     width: 90%;
 }
 
 .descriptionBg {
-    background-color: #F6E2DA;
+    background-color: rgb(231, 231, 231);
 }
 
 .contactBg {
@@ -424,7 +425,7 @@ div .creditsHeading {
     max-width: 85%;
     font-size: 1.2em;
     line-height: 1.6em;
-    color: rgb(46, 46, 46);;
+    color: rgb(46, 46, 46);
     text-align: left;
 }
 
@@ -433,7 +434,7 @@ div .creditsHeading {
     grid-row: 1;
     display: block;
     margin: 0 auto;
-    color: rgb(46, 46, 46);;
+    color: rgb(46, 46, 46);
     font-size: 1.2em;
     line-height: 1.6em;
     text-align: center;
@@ -466,13 +467,32 @@ div .creditsHeading {
 }
 
 .applyBtn {
-    border: 1px solid rgb(128, 127, 127);
+    border: 1px solid rgb(214, 213, 213);
     text-align: center;
     border-radius: 10px;
     padding: 4px 10px;
     font-size: 1em;
     font-weight: 500;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(204, 204, 204);
+}
+
+.applyBtn:hover {
+    background-color: rgb(71, 71, 71);
+    color: rgb(212, 212, 212);
+}
+
+.applyInfo a {
+    color: rgb(46, 46, 46);;
+}
+
+.applyInfo a:link {
+    -webkit-text-decoration: rgb(46, 46, 46);;
+            text-decoration: rgb(46, 46, 46);;
+}
+
+.applyInfo a:visited {
+    -webkit-text-decoration: rgb(46, 46, 46);;
+            text-decoration: rgb(46, 46, 46);;
 }
 
 .socialmediaIcons{
@@ -672,6 +692,14 @@ div .creditsHeading {
 /* Medium screens 800 */
 @media all and (max-width: 800px) {
 
+    .logoTLU {
+        max-width: 25%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
     .categoryList,
     .gameBodySlots,
     .gameHoldBtn {
@@ -793,6 +821,7 @@ div .creditsHeading {
         height: 30px;
         width: 100px;
         margin-left: -25px;
+        margin-top: 35px;
         -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg);
     }
@@ -848,6 +877,7 @@ div .creditsHeading {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        flex-wrap: column wrap;
         max-width: 90%;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -914,21 +944,27 @@ div .creditsHeading {
 
 @media all and (max-width: 500px) {
     .menuList {
-        max-width: 40%;
+        max-width: 30%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
 
+    .menuDivide {
+        display: none;
+    }
+
     .menuItem {
         margin-bottom: 5px;
-        font-size: 1em;
+        font-size: 1.4em;
+        padding: 5px;
+        background-color: rgb(218, 218, 218);
+        border-radius: 5px;
     }
 
     .logoImg {
         max-width: 20%;
-        margin-bottom: 20px;
     }
     
     .logoHeading {
@@ -936,7 +972,8 @@ div .creditsHeading {
     }
 
     .logoTLU {
-        max-width: 50%;
+        max-width: 30%;
+        margin-bottom: 20px;
     }
     
     /* idea */
