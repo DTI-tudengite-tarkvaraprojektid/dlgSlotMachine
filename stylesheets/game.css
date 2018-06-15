@@ -365,6 +365,16 @@ a:visited {
     padding-bottom: 30px;
 }
 
+#mslot1, #mslot2, #mslot3, #mslot4, #mslot5{
+    height: 50%; 
+    margin: auto; 
+    display: none; 
+    font-size: 85px; 
+    font-family: 'Times New Roman'; 
+    text-align: center; 
+    color: #6bcaba;
+}
+
 .description,
 .apply, 
 .credits,
