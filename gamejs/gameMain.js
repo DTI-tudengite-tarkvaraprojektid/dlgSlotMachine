@@ -200,7 +200,7 @@ function initGame(){
                         slotStates[i] = 0
                     }
                 }
-                ideaBox.innerHTML = winnerSlots[2].sentence+winnerSlots[0].sentence+winnerSlots[3].sentence+winnerSlots[4].sentence+winnerSlots[1].sentence
+                ideaBox.innerHTML = winnerSlots[2].sentence+" "+winnerSlots[0].sentence+" "+winnerSlots[3].sentence+" "+winnerSlots[4].sentence+" "+winnerSlots[1].sentence
                 document.getElementById(ROLL_BUTTON).disabled = false
                 document.getElementById(HOLD_BUTTON_1).disabled = false
                 document.getElementById(HOLD_BUTTON_2).disabled = false

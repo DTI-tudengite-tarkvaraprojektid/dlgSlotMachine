@@ -47,12 +47,16 @@ function drawSlot(slotArray, slotCanvas, sWidth, sHeight){
     c.style.height = 2*(64*(slotArray.length))+"px" //Height
     c.style.width = 120+"px" //Width
     c.style.backgroundColor = "#222"
+    c.style.shadowOffsetX = 0;
+    c.style.shadowOffsetY = 0;
+    c.style.shadowColor = 'rgba(255, 255, 255, 0.2)';
     var ctx = c.getContext("2d")
     c.width = c.clientWidth*pixr  // To make sure the image is not blurry and acts properly,
     c.height = c.clientHeight*pixr // canvas is set to user resolutions
     ctx.fillStyle = '#fff'
     ctx.textAlign = "center" 
     ctx.font = font+"px Arial"
+
 
     for(let i = 0; i<slotArray.length; i++){
         let sliced = null
