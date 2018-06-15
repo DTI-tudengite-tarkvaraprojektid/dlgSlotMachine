@@ -686,7 +686,7 @@ div .creditsHeading {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #B5121B;
+    background-color: #6bcaba;
     color: white;
 }
 
@@ -694,7 +694,7 @@ div .creditsHeading {
 
 .modal-footer {
     padding: 2px 10px;
-    background-color: #B5121B;
+    background-color: #6bcaba;
     color: white;
     height:14px;
 }
@@ -709,7 +709,7 @@ div .creditsHeading {
     margin: -75px 0 0 -75px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #B5121B;
+    border-top: 16px solid #6bcaba;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
