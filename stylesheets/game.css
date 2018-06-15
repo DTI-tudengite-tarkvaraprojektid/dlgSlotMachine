@@ -246,7 +246,7 @@ button:focus {outline:0;}
 .ideaText {
     border: 1px solid rgb(168, 168, 168);
     border-radius: 0 15px 15px 0; 
-    padding: 12px 8px 4px 8px;
+    padding: 10px 8px 4px 8px;
     margin: 0 15px 0 10px;
     font-size: 1.2em;
     -webkit-box-shadow: 1px 1px 10px rgb(209, 209, 209);
@@ -282,15 +282,15 @@ h3 {
     z-index: 100;
 }
 
-.menuItem a {
+a li {
     color: rgb(46, 46, 46);
 }
 
-a:link {
+a li:link {
     text-decoration: none;
 }
 
-a:visited {
+a li:visited {
     text-decoration: none;
 }
 
