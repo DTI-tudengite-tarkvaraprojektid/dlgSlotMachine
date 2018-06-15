@@ -1170,7 +1170,11 @@ div .creditsHeading {
     }
 
     .ideaGrid {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        margin-bottom: 60px;
     }
 
     #description,
