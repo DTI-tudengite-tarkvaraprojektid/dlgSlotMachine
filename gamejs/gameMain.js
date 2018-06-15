@@ -7,11 +7,11 @@ GLOBALS
 //User defined globals
 let SET_SLOT_HEIGHT = 80
 let SET_SLOT_WIDTH = 60
-let SLOT_TYPE_1 = "targetGroup"
-let SLOT_TYPE_2 = "problem"
-let SLOT_TYPE_3 = "genre"
-let SLOT_TYPE_4 = "designElement"
-let SLOT_TYPE_5 = "learningMethod"
+let SLOT_TYPE_1 = "genre"
+let SLOT_TYPE_2 = "targetGroup"
+let SLOT_TYPE_3 = "designElement"
+let SLOT_TYPE_4 = "learningMethod"
+let SLOT_TYPE_5 = "problem"
 let SLOT_CANVAS_1 = "slot1"
 let SLOT_CANVAS_2 = "slot2"
 let SLOT_CANVAS_3 = "slot3"
@@ -200,8 +200,7 @@ function initGame(){
                         slotStates[i] = 0
                     }
                 }
-                ideaBox.innerHTML = winnerSlots[2].sentence+" game for "+winnerSlots[0].sentence+" with "+winnerSlots[3].sentence+
-                " that is based on "+winnerSlots[4].sentence+" and the need for "+winnerSlots[1].sentence
+                ideaBox.innerHTML = winnerSlots[2].sentence+winnerSlots[0].sentence+winnerSlots[3].sentence+winnerSlots[4].sentence+winnerSlots[1].sentence
                 document.getElementById(ROLL_BUTTON).disabled = false
                 document.getElementById(HOLD_BUTTON_1).disabled = false
                 document.getElementById(HOLD_BUTTON_2).disabled = false

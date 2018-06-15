@@ -46,9 +46,11 @@ function drawSlot(slotArray, slotCanvas, sWidth, sHeight){
     let font = 16*pixr
     c.style.height = 2*(64*(slotArray.length))+"px" //Height
     c.style.width = 120+"px" //Width
+    c.style.backgroundColor = "#222"
     var ctx = c.getContext("2d")
     c.width = c.clientWidth*pixr  // To make sure the image is not blurry and acts properly,
     c.height = c.clientHeight*pixr // canvas is set to user resolutions
+    ctx.fillStyle = '#fff'
     ctx.textAlign = "center" 
     ctx.font = font+"px Arial"
 

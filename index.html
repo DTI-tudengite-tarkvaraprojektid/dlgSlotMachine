@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./stylesheets/game.css">
     <script>let fromDatabase=[["1","targetGroup","Colour%Information","Understand how the color information is stored in the computer","adult market"],["2","targetGroup","Eksam","Game for Adults market","adults"],["3","problem","maths","Game about maths","maths"],["4","genre","action","action game","action"],["5","eksam","eksam","eksam","eksam"],["6","designElement","test","test","test"],["7","learningMethod","Eksam","test","test"],["8","targetGroup","Kids","game for kids","kids"],["9","targetGroup","Teenagers","game for teenagers","teenagers"],["10","genre","RPG","RPG game","role playing game"],["11","genre","mystery","mystery game","mystery"],["12","eksam","eksam","eksam","eksam"],["13","eksam","eksam","eksam","eksam"],["14","eksam","Eksam","eksam","eksam"],["15","Eksam","Eksam","Eksam","Eksam"],["16","eksam","eksam","eksam","eksam"],["17","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"]]</script>
     <script src="./db_handler/dataHandler.js"></script>
@@ -29,11 +30,11 @@
             <div class="gameBody" id="gameBody">
 
                 <ul class="categoryList">
-                    <li class="categoryItem ciTarget">Target:</li>
-                    <li class="categoryItem ciNeed">Need:</li>
-                    <li class="categoryItem ciGenre">Genre:</li>
-                    <li class="categoryItem ciDesign">Design:</li>
-                    <li class="categoryItem ciLearning">Learning:</li>
+                    <li class="categoryItem ciTarget">Genre:</li>
+                    <li class="categoryItem ciNeed">Target:</li>
+                    <li class="categoryItem ciGenre">Design:</li>
+                    <li class="categoryItem ciDesign">Learning:</li>
+                    <li class="categoryItem ciLearning">Need:</li>
                 </ul>
 
                 <div class="gameBodySlots gameGrid">
@@ -78,6 +79,9 @@
                     <button type="button" id="holdButton5" class="gameHoldItem ghLearning" onclick="holdButtonToggler(5)" disabled>
                         <img src="img/lock_open.svg" id="lock5" class="lock-icon">
                     </button>
+                </div>
+                <div>
+                    <h4 class="gameHoldInfo">Click on the rollers to see detailed information.</h4>    
                 </div>
             </div>
 
@@ -145,7 +149,8 @@
                             </div>
                         </div>
 					</div>
-					<script src="./gamejs/modal2.js"></script>
+                    <script src="./gamejs/modal2.js"></script>
+                    <h4 class="descriptionProgram">Click on the diagram to see the full programme.</h4>
 					
                 </div>
 
