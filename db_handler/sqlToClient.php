@@ -32,7 +32,7 @@ function retrieveData(){
 
 
 
-    $sql = "SELECT id, slotType, slotContent, slotDesc, slotSentence FROM dataGame";
+    $sql = "SELECT * FROM dataGame";
 
     $result = $conn->query($sql);
 
@@ -44,17 +44,19 @@ function retrieveData(){
 
         while($row = $result->fetch_assoc()) {
 
-            $outputArray[$i][0] = $row["id"];
+            if($row["active"] == 1){
+                $outputArray[$i][0] = $row["id"];
 
-            $outputArray[$i][1] = $row["slotType"];
+                $outputArray[$i][1] = $row["slotType"];
 
-            $outputArray[$i][2] = $row["slotContent"];
+                $outputArray[$i][2] = $row["slotContent"];
 
-            $outputArray[$i][3] = $row["slotDesc"];
+                $outputArray[$i][3] = $row["slotDesc"];
 
-            $outputArray[$i][4] = $row["slotSentence"];
+                $outputArray[$i][4] = $row["slotSentence"];
 
             $i = $i+1;
+            }
 
         }
 
