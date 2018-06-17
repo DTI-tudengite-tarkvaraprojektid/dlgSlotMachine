@@ -483,7 +483,7 @@ div .creditsHeading {
     margin: 20px auto 0 auto;
     grid-column: 2;
     grid-row: 3;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -626,7 +626,7 @@ div .creditsHeading {
     grid-column: 2;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.8em;
+    line-height: 1.6em;
     font-size: 1em;
     color: rgb(46, 46, 46);
 }
