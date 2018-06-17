@@ -154,7 +154,7 @@ p {
     padding: 10px;
     background-color: rgb(231, 231, 231);
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* box-shadow: 0px 0px 2px rgb(168, 168, 168); */
 
 }
@@ -168,7 +168,7 @@ button:focus {outline:0;}
 
 /* Button blinking */
 
-.blinking {
+/* .blinking {
     color: #FFFAFA;
     text-shadow: 0 -40px 100px, 0 0 3px, 0 0 1em #6bcaba, 0 0 0.5em #3c9687, 0 0 0.1em #9fe4d8, 0 5px 3px #000;
 }
@@ -203,15 +203,17 @@ button:focus {outline:0;}
         color: #6bcaba;
         text-shadow: none;
     }
-} 
+}  */
 
 /* Slot description */
 
 .gameHoldInfo {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 0 auto;
     font-weight: 400;
-    font-size: 1.2em;
+    font-style: italic;
+    font-size: 1em;
     letter-spacing: 1px;
     margin-bottom: 20px;
     max-width: 90%;
@@ -441,7 +443,7 @@ div .creditsHeading {
     grid-row: 1;
     margin: 0 auto;
     display: block;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6em;
 }
 
@@ -598,6 +600,8 @@ div .creditsHeading {
     margin-right: 5px;
     width: 25px;
     height: 25px;
+    margin-bottom: -8px;
+    margin-top: 5px;
 }
 
 .contactInfo a {
@@ -612,6 +616,18 @@ div .creditsHeading {
 .contactInfo a:visited {
     -webkit-text-decoration: #F6E2DA;
             text-decoration: #F6E2DA;
+}
+
+/* credits */
+
+.creditsTeam {
+    font-family: 'Tajawal', sans-serif;
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.8em;
+    font-size: 1em;
 }
 
 
