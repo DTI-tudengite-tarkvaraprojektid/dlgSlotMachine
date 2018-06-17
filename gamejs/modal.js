@@ -10,12 +10,8 @@ var slot5 = document.getElementById("slot5")
 slot1.onclick = function(){
     if(GAME_STATE == 0 && TURN_COUNT>0){
         modal.style.display = "block"
-<<<<<<< HEAD
         document.getElementById("modal-header-name").innerHTML = "<p>"+winnerSlots[0].content+"</p>"
         document.getElementById("modal-body-id").innerHTML = "<p>You clicked: "+winnerSlots[0].desc+"</p>"
-=======
-        document.getElementById("modal-body-id").innerHTML = "<p>"+winnerSlots[0].desc+"</p>"
->>>>>>> 4545dc2612b1cfd7ff7aca782b82c83a6e80e199
     }
     else if(TURN_COUNT==0){
         modal.style.display = "block"
@@ -25,12 +21,8 @@ slot1.onclick = function(){
 slot2.onclick = function(){
     if(GAME_STATE == 0 && TURN_COUNT>0){
         modal.style.display = "block"
-<<<<<<< HEAD
         document.getElementById("modal-header-name").innerHTML = "<p>"+winnerSlots[1].content+"</p>"
         document.getElementById("modal-body-id").innerHTML = "<p>You clicked: "+winnerSlots[1].desc+"</p>"
-=======
-        document.getElementById("modal-body-id").innerHTML = "<p>"+winnerSlots[1].desc+"</p>"
->>>>>>> 4545dc2612b1cfd7ff7aca782b82c83a6e80e199
     }
     else if(TURN_COUNT==0){
         modal.style.display = "block"
@@ -40,12 +32,8 @@ slot2.onclick = function(){
 slot3.onclick = function(){
     if(GAME_STATE == 0 && TURN_COUNT>0){
         modal.style.display = "block"
-<<<<<<< HEAD
         document.getElementById("modal-header-name").innerHTML = "<p>"+winnerSlots[2].content+"</p>"
         document.getElementById("modal-body-id").innerHTML = "<p>You clicked: "+winnerSlots[2].desc+"</p>"
-=======
-        document.getElementById("modal-body-id").innerHTML = "<p> "+winnerSlots[2].desc+"</p>"
->>>>>>> 4545dc2612b1cfd7ff7aca782b82c83a6e80e199
     }
     else if(TURN_COUNT==0){
         modal.style.display = "block"
@@ -55,12 +43,8 @@ slot3.onclick = function(){
 slot4.onclick = function(){
     if(GAME_STATE == 0 && TURN_COUNT>0){
         modal.style.display = "block"
-<<<<<<< HEAD
         document.getElementById("modal-header-name").innerHTML = "<p>"+winnerSlots[3].content+"</p>"
         document.getElementById("modal-body-id").innerHTML = "<p>You clicked: "+winnerSlots[3].desc+"</p>"
-=======
-        document.getElementById("modal-body-id").innerHTML = "<p> "+winnerSlots[3].desc+"</p>"
->>>>>>> 4545dc2612b1cfd7ff7aca782b82c83a6e80e199
     }
     else if(TURN_COUNT==0){
         modal.style.display = "block"
@@ -70,12 +54,8 @@ slot4.onclick = function(){
 slot5.onclick = function(){
     if(GAME_STATE == 0 && TURN_COUNT>0){
         modal.style.display = "block"
-<<<<<<< HEAD
         document.getElementById("modal-header-name").innerHTML = "<p>"+winnerSlots[4].content+"</p>"
         document.getElementById("modal-body-id").innerHTML = "<p>You clicked: "+winnerSlots[4].desc+"</p>"
-=======
-        document.getElementById("modal-body-id").innerHTML = "<p>"+winnerSlots[4].desc+"</p>"
->>>>>>> 4545dc2612b1cfd7ff7aca782b82c83a6e80e199
     }
     else if(TURN_COUNT==0){
         modal.style.display = "block"
