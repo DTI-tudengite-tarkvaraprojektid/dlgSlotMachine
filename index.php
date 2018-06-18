@@ -7,7 +7,8 @@
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./stylesheets/game.css">
-    <script>let fromDatabase=[["1","targetGroup","Colour%Information","Understand how the color information is stored in the computer","adult market"],["2","targetGroup","Eksam","Game for Adults market","adults"],["3","problem","maths","Game about maths","maths"],["4","genre","action","action game","action"],["5","eksam","eksam","eksam","eksam"],["6","designElement","test","test","test"],["7","learningMethod","Eksam","test","test"],["8","targetGroup","Kids","game for kids","kids"],["9","targetGroup","Teenagers","game for teenagers","teenagers"],["10","genre","RPG","RPG game","role playing game"],["11","genre","mystery","mystery game","mystery"],["12","eksam","eksam","eksam","eksam"],["13","eksam","eksam","eksam","eksam"],["14","eksam","Eksam","eksam","eksam"],["15","Eksam","Eksam","Eksam","Eksam"],["16","eksam","eksam","eksam","eksam"],["17","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","eksam","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"],["16","learningMethod","eksam","eksam","eksam"]]</script>
+    <?php require('db_handler/sqlToClient.php');
+    retrieveData(); ?>    
     <script src="./db_handler/dataHandler.js"></script>
 	<script src="./gamejs/slot.js"></script>
     <script src="./gamejs/gameMain.js"></script>
