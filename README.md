@@ -1,7 +1,7 @@
 # DLG Reklaammäng
 
 ## Screenshot
-![screenshot](https://github.com/nsalong/dlgSlotMachine/tree/master/img/)
+![image](https://github.com/nsalong/dlgSlotMachine/tree/master/img/dlg_game.png)
 
 ## Kirjeldus
 Mängu eesmärk on genereerida mängijatele mänguidee, selle abil saavad DLG õppekaval õppijad idee, mille abil
