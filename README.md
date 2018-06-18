@@ -1,6 +1,7 @@
 # DLG Reklaammäng
 
 ## Screenshot
+![screenshot](https://github.com/nsalong/dlgSlotMachine/tree/master/img/)
 
 ## Kirjeldus
 Mängu eesmärk on genereerida mängijatele mänguidee, selle abil saavad DLG õppekaval õppijad idee, mille abil
@@ -21,7 +22,7 @@ Veebileht on tehtud Tallinna Ülikooli Digitehnoloogiate instituudi üliõpilast
 - Kaidi - Liis Liim
 - Kristo Roots
 
-## Juhised
+## Juhised tabelite jaoks
 
 CREATE TABLE dataGame(
 id INT NOT NULL UNSIGNED PRIMARY KEY,
@@ -38,3 +39,5 @@ password VARCHAR(512)
 );
 
 ## Litsents
+
+https://github.com/nsalong/dlgSlotMachine/blob/master/LICENSE.txt
