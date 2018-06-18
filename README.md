@@ -1,15 +1,26 @@
-# Game Idea Bandit
+# DLG Reklaammäng
 
-Hoian kõige uuemat versiooni üleval: www.mrsalong.ee/dlg
+## Screenshot
 
-## Mida on vaja veel teha(koodis):
+## Kirjeldus
+Mängu eesmärk on genereerida mängijatele mänguidee, selle abil saavad DLG õppekaval õppijad idee, mille abil
+hakkavad nad mängu looma. Mänguautomaadil on ka võimalus lukustada omal valikul kuni 3 lahtrit ning nende abil on
+võimalik genereerida omale meelepärane idee.
+Veebileht on tehtud Tallinna Ülikooli Digitehnoloogiate instituudi üliõpilaste poolt tarkvaraarenduse praktika käigus
 
-1) CSS kujundus vead mõnes kohas(ei tea miks see rolli nuppu praegu seal on kus ta on :D)
+## Kasutatud versioonid
+Php: 7.0.33
+HTML: HTML5
+Javascript: ECMAScript 2017
+CSS: CSS Version 4
 
-## Kuidas failid paigutatud on:
+## Projekti liikmed
+Kertu Kipper
+Krislyn Luks
+Norman Salong
+Kaidi - Liis Liim
+Kristo Roots
 
-Kõik andmebaasiga seonduv on db_handler kaustas. Ainuke mis seal ümber tuleb teha on andmebaasi ligipääsu info sügavamale peitmisega, et seda nii lihtsalt kätte ei saaks keegi võõras
+## Juhised
 
-Kõik "mängumootoriga" seonduv on kaustas gamejs. Kuna sellega tegelen enamjaolt mina siis seda väga puutuda ei ole vaja.
-
-Kõik muu lehega seonduv on webjs kaustas. Sinna saab lisada mis iganes lisa funktsioone, info nupud jne.
+## Litsents
