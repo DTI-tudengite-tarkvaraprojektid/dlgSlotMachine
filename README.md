@@ -1,7 +1,7 @@
 # DLG Reklaammäng
 
 ## Screenshot
-![alt text] (/img/dlg_game.png)
+![alt text] (img/dlg_game.png)
 
 ## Kirjeldus
 Mängu eesmärk on genereerida mängijatele mänguidee, selle abil saavad DLG õppekaval õppijad idee, mille abil
