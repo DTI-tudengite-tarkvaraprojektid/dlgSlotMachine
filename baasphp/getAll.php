@@ -36,11 +36,11 @@ $conn = new mysqli($GLOBALS["servername"], $GLOBALS["dbusername"], $GLOBALS["dbp
         echo $result->num_rows." entries loaded.";
         echo "<table>
         <tr>
-        <th>id</th>
-        <th>type</th>
-        <th>content</th>
-        <th>description</th>
-        <th>sentence</th>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Sentence</th>
         <th>Actions</th>
         </tr>";
         // tabel

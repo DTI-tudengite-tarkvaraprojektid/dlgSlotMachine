@@ -272,11 +272,11 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
     <span>
         <select id="typeOption">
 	        <option value="">Select type...</option>
-	        <option id="type "value="targetGroup">targetGroup</option>
-            <option id="type" value="problem">problem</option>
-            <option id="type" value="genre">genre</option>
-            <option id="type" value="designElement">designElement</option>
-	        <option id="type" value="learningMethod">learningMethod</option>
+	        <option id="type "value="targetGroup">Target</option>
+            <option id="type" value="problem">Need</option>
+            <option id="type" value="genre">Genre</option>
+            <option id="type" value="designElement">Design</option>
+	        <option id="type" value="learningMethod">Learning</option>
 	    </select>
         <input type="text" id="content" placeholder="Content...">
         <input type="text" id="desc" placeholder="Description...">
