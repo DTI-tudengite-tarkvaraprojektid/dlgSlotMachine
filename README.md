@@ -23,4 +23,18 @@ Kristo Roots
 
 ## Juhised
 
+CREATE TABLE dataGame(
+id INT NOT NULL UNSIGNED PRIMARY KEY,
+slotContent VARCHAR(64),
+slotDesc VARCHAR(512),
+slotSentence VARCHAR(256),
+active BIT(1)
+);
+
+CREATE TABLE userData(
+id INT NOT NULL UNSIGNED PRIMARY KEY,
+username VARCHAR(64),
+password VARCHAR(512)
+);
+
 ## Litsents
