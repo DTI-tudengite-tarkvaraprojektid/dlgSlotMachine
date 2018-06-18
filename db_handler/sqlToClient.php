@@ -1,26 +1,14 @@
 <?php
 
-$servername = 'd67184.mysql.zonevs.eu';
-
-$username = 'd67184_dlguser';
-
-$password = 'dlguseradmin';
-
-$dbname = 'd67184_dlg';
-
-
-
 $outputArray = array(array("id","type","content","desc","sentence"));
 
 
 
 function retrieveData(){
-   global $servername, $username, $password, $dbname;
-
 
     // Create connection
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($GLOBALS["servername"], $GLOBALS["dbusername"], $GLOBALS["dbpassword"], $GLOBALS["dbname"]);
 
     // Check connection
 
