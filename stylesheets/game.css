@@ -1206,10 +1206,18 @@ div .creditsHeading {
         background-color: #6bcaba;
     }
 
+    .menuItem.menuMute:hover {
+        color: #222;
+        background-color: rgb(218, 218, 218);
+    }
+
+    .smFacebook {
+        font-size: 0.8em;
+    }
+
     .creditsTeam{
         padding-left: 40px;
     }
-
 }
 
 @media all and (max-width: 350px) {
