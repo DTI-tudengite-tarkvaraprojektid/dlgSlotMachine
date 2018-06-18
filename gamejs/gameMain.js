@@ -140,10 +140,12 @@ function audio(){
 function muteAudio(){
 	if(roll.muted === false){
 		roll.muted = true
-		document.getElementById("sound").innerHTML = "Unmute"
+        document.getElementById("sound").innerHTML = "Unmute"
+        document.getElementById("sound").style.backgroundColor = "#6bcaba"
 	} else {
 		roll.muted = false
-		document.getElementById("sound").innerHTML = "Mute"
+        document.getElementById("sound").innerHTML = "Mute"
+        document.getElementById("sound").style.backgroundColor = "#dadada"
 	}
 }
 
