@@ -51,6 +51,7 @@ p {
     position: relative;
     width: 730px;
     margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgb(253, 253, 253)), color-stop(40%, rgb(170, 170, 170)),color-stop(75%, rgb(253, 253, 253)));
     background-image: linear-gradient(rgb(253, 253, 253) 5%, rgb(170, 170, 170) 40%,rgb(253, 253, 253) 75%);
 } 
 
@@ -131,7 +132,8 @@ p {
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase; 
-    box-shadow: 0px 0px 15px #6bcaba;
+    -webkit-box-shadow: 0px 0px 15px #6bcaba; 
+            box-shadow: 0px 0px 15px #6bcaba;
 }
 
 /* Hold  buttons */
@@ -168,12 +170,42 @@ button:focus {outline:0;}
 
 /* Button blinking */
 
-/* .blinking {
+.blinking {
     color: #FFFAFA;
     text-shadow: 0 -40px 100px, 0 0 3px, 0 0 1em #6bcaba, 0 0 0.5em #3c9687, 0 0 0.1em #9fe4d8, 0 5px 3px #000;
 }
 .blinking span {
-    animation: blink linear infinite 4s;
+    -webkit-animation: blink linear infinite 4s;
+            animation: blink linear infinite 4s;
+}
+
+@-webkit-keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color:#4a8c81;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #53a093;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92.5% {
+        color: #6bcaba;
+        text-shadow: none;
+    }
 }
 
 @keyframes blink {
@@ -203,7 +235,7 @@ button:focus {outline:0;}
         color: #6bcaba;
         text-shadow: none;
     }
-}  */
+} 
 
 /* Slot description */
 
@@ -248,7 +280,7 @@ button:focus {outline:0;}
 .ideaText {
     border: 1px solid rgb(168, 168, 168);
     border-radius: 0 15px 15px 0; 
-    padding: 10px 8px 4px 8px;
+    padding: 6px 8px 0px 8px;
     margin: 0 15px 0 10px;
     font-size: 1.2em;
     -webkit-box-shadow: 1px 1px 10px rgb(209, 209, 209);
@@ -304,13 +336,17 @@ a li:visited {
     margin: 0 auto;
 }
 
-.menuItem.noLine::after,
-.menuItem.noLine:hover::after{	
+.menuItem.menuMute::after,
+.menuItem.menuMute:hover::after{	
 	display: none;
 }
 
-.menuItem.noLine {
-    color:rgb(46, 46, 46);
+.menuItem.menuMute {
+    color: rgb(46, 46, 46);
+}
+
+.menuItem.menuMute:hover {
+    color: #6bcaba;
 }
 
 
@@ -491,6 +527,7 @@ div .creditsHeading {
 #myImg {
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -533,13 +570,20 @@ div .creditsHeading {
 
 /* Add Animation - Zoom in the Modal */
 .modal-content_2, #caption_2 { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
+    -webkit-animation-name: zoom; 
+            animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0);transform:scale(0)} 
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)} 
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 /* The Close Button */
@@ -550,6 +594,7 @@ div .creditsHeading {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -629,6 +674,7 @@ div .creditsHeading {
     line-height: 1.6em;
     font-size: 1em;
     color: rgb(46, 46, 46);
+    padding-left: 80px;
 }
 
 
@@ -658,7 +704,7 @@ div .creditsHeading {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 25%;
+    width: 35%;
     -webkit-box-shadow: 0 4px 8px 0 rgba(80, 80, 80, 0.2),0 6px 20px 0 rgba(80, 80, 80, 0.2);
             box-shadow: 0 4px 8px 0 rgba(80, 80, 80, 0.2),0 6px 20px 0 rgba(80, 80, 80, 0.2);
     -webkit-animation-name: animatetop;
@@ -731,7 +777,7 @@ div .creditsHeading {
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
-    padding: 2px 10px;
+    padding: 20px 10px;
     background-color: #6bcaba;
     color: white;
     height:14px;
@@ -782,6 +828,7 @@ div .creditsHeading {
     }
 
     .gameBody { 
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgb(253, 253, 253)), color-stop(40%, rgb(170, 170, 170)),color-stop(55%, rgb(253, 253, 253))); 
         background-image: linear-gradient(rgb(253, 253, 253) 5%, rgb(170, 170, 170) 40%,rgb(253, 253, 253) 55%);
     } 
     .gameHoldItem {
@@ -981,7 +1028,8 @@ div .creditsHeading {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        flex-wrap: column wrap;
+        -ms-flex-wrap: column wrap;
+            flex-wrap: column wrap;
         max-width: 90%;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -1158,6 +1206,10 @@ div .creditsHeading {
         background-color: #6bcaba;
     }
 
+    .creditsTeam{
+        padding-left: 40px;
+    }
+
 }
 
 @media all and (max-width: 350px) {
@@ -1190,6 +1242,10 @@ div .creditsHeading {
         margin-bottom: 60px;
     }
 
+    .ideaText {
+        padding: 10px 8px 0px 8px;
+    }
+
     h3 {
         margin-bottom: 60px;
     }
@@ -1216,5 +1272,8 @@ div .creditsHeading {
         line-height: 1.8em;
     }
 
+    .creditsTeam{
+        padding-left: 40px;
+    }
 }
 

@@ -12,6 +12,13 @@
 	<script src="./gamejs/slot.js"></script>
     <script src="./gamejs/gameMain.js"></script>
     <title>Game Idea Bandit</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#6bcaba">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
     <body>
@@ -21,12 +28,13 @@
             </div>
         </div>
 
-
-        <div class="gradient">
+        <section class="sectionHeader">
             <img src="img/dlg.svg" alt="Tallinn University logo" class="logoImg">
             <img src="img/tlu.svg" alt="Tallinn University logo" class="logoTLU">
             <h1>Digital Learning Games<br><span class="strokeHeading">Idea Generating Machine</span></h1>
+        </section>
 
+        <section class="sectionGame">
             <div class="gameBody" id="gameBody">
 
                 <ul class="categoryList">
@@ -80,12 +88,27 @@
                         <img src="img/lock_open.svg" id="lock5" class="lock-icon">
                     </button>
                 </div>
+
+                <div id="infoModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2 id="modal-header-name">Information</h2>
+                        </div>
+                        <div class="modal-body" id="modal-body-id"></div>
+                        <div class="modal-footer">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div>
                 <h4 class="gameHoldInfo">Click on the rollers to see detailed information.</h4>    
             </div>
+        </section>
 
+        <section class="sectionIdea">
             <div class="idea">
                 <div class="ideaGrid">
                     <h2 class="ideaHeading">Idea:</h2>
@@ -93,40 +116,29 @@
                 </div>
                 <h3>Do you want to make such a game?</h3>
             </div>
+        </section>
 
+        <section class="sectionMenu">
             <div class="menu">
                 <ul class="menuList">
-                    <a href="#description" class="menuLink menuItem js-scroll-nav"><li>About</li></a>
+                    <a href="#description" class="menuItem js-scroll-nav"><li>About</li></a>
                     <span class="menuDivide">╱</span>
-                    <a href="#apply" class="menuLink menuItem js-scroll-nav"><li>Apply</li></a>
+                    <a href="#apply" class="menuItem js-scroll-nav"><li>Apply</li></a>
                     <span class="menuDivide">╱</span>
-                    <a href="#contact" class="menuLink menuItem js-scroll-nav"><li>Contacts</li></a>
+                    <a href="#contact" class="menuItem js-scroll-nav"><li>Contacts</li></a>
                     <span class="menuDivide">╱</span>
-                    <a href="#credits" class="menuLink menuItem js-scroll-nav"><li>Credits</li></a>
+                    <a href="#credits" class="menuItem js-scroll-nav"><li>Credits</li></a>
                     <span class="menuDivide">╱</span>
-                    <li class="menuItem noLine" id="sound" onclick="muteAudio()" >Mute</li>
+                    <li class="menuItem menuMute" id="sound" onclick="muteAudio()">Mute</li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div id="infoModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 id="modal-header-name">Information</h2>
-                </div>
-                <div class="modal-body" id="modal-body-id"></div>
-                <div class="modal-footer">
-                    <h3></h3>
-                </div>
-            </div>
-        </div>
-        <div class="descriptionBg">
+        <section class="descriptionBg">
             <div class="descriptionGrid">
                 <div id="description" class="description">
                     <div class="descriptionHeading">About DLG</div>
                     <p class="descriptionInfo"><b>Digital Learning Games</b> (DLG) is a 2 year international postgraduate programme in the Tallinn University. DLG is unique in its interdisciplinary nature - it combines technology, art, pedagogy and psychology in order to create a meaningful and engaging experience. Our objective is to bring together people with different backgrounds: programmers, artists, teachers, psychologists, and everybody who is interested in digital innovation and creating games in a team. To learn from the best and from each other, and have fun. The study language is English and graduates will receive an MSc degree</p>
-
                     <img id="myImg" src="img/dlg-short.png" class="dlgShort" alt="Digital Learning Games programme">
                     <div id="myModal" class="modal_2">
                         <span class="close_2">&times;</span>
@@ -136,9 +148,9 @@
                     <h4 class="descriptionProgram">Click on the diagram to see the full programme.</h4>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="applyBg">
+        <section class="applyBg">
             <div class="applyGrid">
                 <div id="apply" class="apply">
                     <div class="applyHeading">Apply</div>
@@ -150,9 +162,9 @@
                     The tuition fee is 1250 € per semester.<br><br><a href="https://estonia.dreamapply.com/courses/course/375-msc-digital-learning-games" target="_blank" class="applyBtn">Apply here</a></p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="contactBg">
+        <section class="contactBg">
             <div class="contactGrid">
                 <div id="contact" class="contact">
                     <div class="contactHeading">Contacts</div>
@@ -164,9 +176,9 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="creditsBg"></div>
+        <section class="creditsBg"></div>
             <div class="creditsGrid">
                 <div id="credits" class="credits">
                     <div class="creditsHeading">Credits</div>
@@ -174,15 +186,15 @@
                     Team Members:
                         <ul class="creditsTeam">
                             <li class="creditsTeamMember">K. Kipper - front-end and project management</li>
-                            <li class="creditsTeamMember">Krislyn Luks and Kristo Roots - front-end</li>
-                            <li class="creditsTeamMember">Kaidi-Liis Liim and Norman Salong - back-end</li>
+                            <li class="creditsTeamMember">K. Luks and K. Roots - front-end</li>
+                            <li class="creditsTeamMember">K. Liim and N. Salong - back-end</li>
                             <li class="creditsTeamMember">Mikhail Fiadotau (lector of DLG) - conceptual design</li>
                             <li class="creditsTeamMember">Martin Sillaots (associate professor of DLG) - idea author</li>
                         </ul>
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <script src="./gamejs/modal.js"></script>
         <script src="./gamejs/modal2.js"></script>
