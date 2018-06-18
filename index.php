@@ -12,7 +12,7 @@
     <script src="./db_handler/dataHandler.js"></script>
 	<script src="./gamejs/slot.js"></script>
     <script src="./gamejs/gameMain.js"></script>
-    <title>Game Idea Bandit</title>
+    <title>Digital Learning Games</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
