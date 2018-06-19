@@ -270,6 +270,8 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 	<br>
     <span>
     <span>
+    <p>Title - % - means line break after the word (to separate words on slot)
+Uploading the file - ; - between different types</p>
         <select id="typeOption">
 	        <option value="">Select type...</option>
 	        <option id="type "value="targetGroup">Target</option>
@@ -281,7 +283,8 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
         <input type="text" id="content" placeholder="Content...">
         <input type="text" id="desc" placeholder="Description...">
         <input type="text" id="sentence" placeholder="Sentence...">
-        <button type="submit" onclick="add(document.getElementById('typeOption').value, document.getElementById('content').value, document.getElementById('desc').value, document.getElementById('sentence').value)">Add record</button><br></br>
+        <button type="submit" onclick="add(document.getElementById('typeOption').value, document.getElementById('content').value, document.getElementById('desc').value, document.getElementById('sentence').value)">Add record</button>
+        <br></br>
     </span>
         <input type="text" id="searchText" placeholder="Type, content, descr...">
         <button type="submit" onclick="search(document.getElementById('searchText').value)">Search</button>
