@@ -22,6 +22,10 @@ Veebileht on tehtud Tallinna Ülikooli Digitehnoloogiate instituudi üliõpilast
 - Kaidi - Liis Liim
 - Kristo Roots
 
+## Mängu asukoht
+
+  http://dlg.tlu.ee
+
 ## Juhised tabelite jaoks
 
 CREATE TABLE dataGame(
@@ -29,7 +33,7 @@ id INT NOT NULL UNSIGNED PRIMARY KEY,
 slotContent VARCHAR(64),
 slotDesc VARCHAR(512),
 slotSentence VARCHAR(256),
-active BIT(1)
+active INT(1)
 );
 
 CREATE TABLE userData(
