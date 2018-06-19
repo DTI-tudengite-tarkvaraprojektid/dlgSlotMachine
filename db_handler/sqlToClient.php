@@ -1,4 +1,5 @@
 <?php
+require '../../dlgConfig.php';
 
 $outputArray = array(array("id","type","content","desc","sentence"));
 
