@@ -33,7 +33,7 @@ id INT NOT NULL UNSIGNED PRIMARY KEY,
 slotContent VARCHAR(64),
 slotDesc VARCHAR(512),
 slotSentence VARCHAR(256),
-active INT BIT(1)
+active INT(1)
 );
 
 CREATE TABLE userData(
