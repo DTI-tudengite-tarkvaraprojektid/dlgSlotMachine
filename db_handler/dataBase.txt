@@ -1,5 +1,0 @@
-id - Incremental
-type - STR(64 chars)
-slotContent - STR(10 chars)
-slotDesc - STR(250 chars)
-slotSentence - STR(64 chars)
