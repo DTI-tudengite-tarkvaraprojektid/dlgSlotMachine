@@ -48,7 +48,7 @@ password VARCHAR(512)
 2. Loo dlgConfig.php fail milles on välja toodud $GLOBALS["$"] muutujatena $servername, $dbusername, $dbpassword, $dbname.
 3. Klooni gitis olev kood serverisse, jälgi, et dlgConfig.php fail oleks üks kaust üleval pool koodikaustast ehk: 
 juhul kui koodi kaust on server/leht, siis config fail asub server kaustas.
-4. Kasutades andmebaasi liidest(domain.com/baasphp) lisa vajalikud andmed andmebaasi, andmete puudumisel ei lae leht ära.
+4. Kasutades andmebaasi liidest(domain.com/baasphp) lisa vajalikud andmed andmebaasi, andmete puudumisel ei lae leht ära.(andmebaasi liidesele saab ligi luues kasutaja userData tabelisse, seda peab tegema läbi käsurea või phpmyadminis vms.)
 
 ## Litsents
 
